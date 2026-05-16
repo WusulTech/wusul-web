@@ -1,0 +1,40 @@
+/* ================================================
+  variables.css — Wusul Design Tokens
+  Extracted from Figma design
+   ================================================ */
+
+:root {
+  /* ── Brand Colors (from Figma) ─────────────── */
+  --ws-primary:        #2563EB;   /* Main blue — buttons, accents      */
+  --ws-primary-hover:  #1D4ED8;   /* Darker on hover                   */
+  --ws-primary-light:  #EFF6FF;   /* Light blue bg — badge, tints      */
+  --ws-primary-border: #BFDBFE;   /* Badge border color                */
+
+  /* ── Text Colors ───────────────────────────── */
+  --ws-text-dark:      #111827;   /* H1 headlines                      */
+  --ws-text-body:      #4B5563;   /* Description / body text           */
+  --ws-text-nav:       #374151;   /* Navbar links                      */
+  --ws-text-muted:     #6B7280;   /* Stats label, secondary text       */
+
+  /* ── Backgrounds ───────────────────────────── */
+  --ws-bg-page:        #EDEEF2;   /* Hero section bg (light gray)      */
+  --ws-bg-white:       #FFFFFF;   /* Navbar + stat cards               */
+  --ws-bg-card:        #FFFFFF;   /* Stat cards                        */
+
+  /* ── Borders & Shadows ─────────────────────── */
+  --ws-border:         #E5E7EB;
+  --ws-shadow-card:    0 2px 12px rgba(0, 0, 0, 0.07);
+  --ws-shadow-btn:     0 4px 14px rgba(37, 99, 235, 0.30);
+
+  /* ── Typography ────────────────────────────── */
+  --ws-font-display:   'Sora', sans-serif;
+  --ws-font-body:      'Inter', sans-serif;
+
+  /* ── Radius ─────────────────────────────────── */
+  --ws-radius-pill:    999px;
+  --ws-radius-btn:     8px;
+  --ws-radius-card:    14px;
+
+  /* ── Transitions ────────────────────────────── */
+  --ws-ease:           all 0.22s ease;
+}

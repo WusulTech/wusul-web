@@ -1,0 +1,324 @@
+/* ================================================
+   style.css — Wusul Main Styles
+   ================================================ */
+
+/* ── Base ─────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ws-font-body);
+  color: var(--ws-text-body);
+  background: var(--ws-bg-page);
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  /* padding-top لأن الـ navbar فيكسد */
+  padding-top: 10px;
+}
+
+/* ══════════════════════════════════════════════
+   FIX 1 — NAVBAR: floating + rounded corners
+   ══════════════════════════════════════════════ */
+.ws-navbar {
+  background: var(--ws-bg-white);
+  margin: 4px 30px 0;
+  border-radius: 50px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  padding: 0.55rem 1.2rem;
+
+  z-index: 1000;
+  transition: var(--ws-ease);
+}
+
+/* FIX 3 — Logo image */
+.ws-logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
+/* ══════════════════════════════════════════════
+   FIX 2 — NAV LINKS: gradient color on hover
+   ══════════════════════════════════════════════ */
+.ws-nav-link {
+  font-family: var(--ws-font-body);
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--ws-text-nav) !important;
+  padding: 0.4rem 0.9rem !important;
+  position: relative;
+  transition: var(--ws-ease);
+}
+
+.ws-nav-link:hover,
+.ws-nav-link.active {
+  background: linear-gradient(90deg, #0ca7f2 0%, #16184c 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+  font-weight: 500;
+}
+
+.ws-nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0.9rem;
+  right: 0.9rem;
+  height: 2px;
+  background: linear-gradient(90deg, #2563eb 0%, #7c3aed 100%);
+  border-radius: 2px;
+}
+
+/* ══════════════════════════════════════════════
+   BUTTONS
+   ══════════════════════════════════════════════ */
+.ws-btn-primary {
+  background: var(--ws-primary);
+  color: #fff !important;
+  border: 2px solid var(--ws-primary);
+  border-radius: 8px;
+  font-family: var(--ws-font-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.55rem 1.3rem;
+  box-shadow: var(--ws-shadow-btn);
+  transition: var(--ws-ease);
+  text-decoration: none;
+  display: inline-block;
+}
+.ws-btn-primary:hover {
+  background: var(--ws-primary-hover);
+  border-color: var(--ws-primary-hover);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+  transform: translateY(-1px);
+  color: #fff !important;
+  text-decoration: none;
+}
+
+/* FIX 5 — Our Services: transparent */
+.ws-btn-outline {
+  background: transparent;
+  color: var(--ws-text-dark) !important;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  font-family: var(--ws-font-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.55rem 1.3rem;
+  transition: var(--ws-ease);
+  text-decoration: none;
+  display: inline-block;
+}
+.ws-btn-outline:hover {
+  border-color: var(--ws-primary);
+  color: var(--ws-primary) !important;
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+/* ══════════════════════════════════════════════
+   HERO SECTION
+   ══════════════════════════════════════════════ */
+.ws-hero {
+  background: var(--ws-bg-page);
+  padding: 3.5rem 0 3rem;
+}
+
+.ws-badge-pill {
+  display: inline-block;
+  background: var(--ws-primary-light);
+  border: 1px solid var(--ws-primary-border);
+  color: var(--ws-primary);
+  font-family: var(--ws-font-body);
+  font-size: 0.82rem;
+  border-radius: 999px;
+  padding: 0.35rem 1.1rem;
+  margin-bottom: 1.4rem;
+}
+
+/* FIX 4 — Headline on one line */
+.ws-hero-h1 {
+  font-family: var(--ws-font-display);
+  font-weight: 800;
+  font-size: clamp(1.3rem, 2.4vw, 2rem);
+  color: var(--ws-text-dark);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.2rem;
+  white-space: nowrap;
+}
+.ws-hero-h1--blue {
+  color: var(--ws-primary);
+  margin-bottom: 1.2rem;
+}
+
+.ws-hero-desc {
+  font-family: var(--ws-font-body);
+  font-size: 0.95rem;
+  color: var(--ws-text-body);
+  line-height: 1.7;
+  max-width: 560px;
+  margin: 0 auto 2rem;
+}
+
+.ws-hero-btns {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+/* ══════════════════════════════════════════════
+   FIX 6 — STAT CARDS: blue background
+   ══════════════════════════════════════════════ */
+.ws-stats {
+  margin-top: 0.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.ws-stat {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  padding: 1.4rem 0.75rem 1.2rem;
+  text-align: center;
+  transition: var(--ws-ease);
+  border: 2px solid #0ca7f2;
+  height: 160px;
+}
+.ws-stat:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(37, 99, 235, 0.4);
+}
+
+.ws-stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.7rem;
+}
+/* أيقونات تصير بيضاء */
+.ws-stat svg path,
+.ws-stat svg circle {
+  stroke: #0ca7f2;
+}
+
+.ws-stat-num {
+  font-family: var(--ws-font-display);
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #0ca7f2;
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+
+.ws-stat-lbl {
+  font-family: var(--ws-font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #111827;
+  line-height: 1.3;
+}
+
+/* ══════════════════════════════════════════════
+   FIX 7 — TRUSTED BY: image placeholder
+   ══════════════════════════════════════════════ */
+.ws-trusted {
+  padding-top: 2rem;
+  border-top: 1px solid var(--ws-border);
+}
+
+.ws-trusted-title {
+  font-family: var(--ws-font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--ws-primary);
+  margin-bottom: 1.2rem;
+}
+
+.ws-trusted-img {
+  max-width: 620px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.ws-trusted-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.ws-trusted-placeholder span {
+  display: flex;
+  align-items: center;
+}
+
+.ws-trusted-placeholder img {
+  height: 32px; /* غيّر الحجم حسب اللوجوهات */
+  width: auto;
+  opacity: 0.75;
+  filter: grayscale(1);
+  transition: all 0.2s ease;
+}
+
+.ws-trusted-placeholder img:hover {
+  opacity: 1;
+  filter: grayscale(0);
+}
+
+/* ── RESPONSIVE ─────────────────────────────── */
+
+/* Tablet وما دون: navbar عادي */
+@media (max-width: 991px) {
+  .ws-navbar {
+    margin: 0;
+    border-radius: 0;
+    position: sticky;
+    top: 0;
+  }
+  body {
+    padding-top: 0;
+  }
+}
+
+/* موبايل */
+@media (max-width: 767px) {
+  .ws-hero-h1 {
+    white-space: normal;
+    font-size: 1.4rem;
+  }
+  .ws-hero-btns {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ws-hero-btns .btn {
+    width: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .ws-hero {
+    padding: 2rem 0 2rem;
+  }
+  .ws-stat {
+    padding: 1rem 0.4rem;
+  }
+  .ws-stat-num {
+    font-size: 1.2rem;
+  }
+  .ws-stat-lbl {
+    font-size: 0.68rem;
+  }
+}

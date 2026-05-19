@@ -473,3 +473,581 @@ body {
     font-size: 5rem;
   }
 }
+/* ================================================
+   ABOUT US SECTION
+   ================================================ */
+
+.ws-about {
+  background: var(--ws-bg-page);
+  padding: 5rem 0;
+}
+
+/* الكارت الرئيسي بالـ gradient */
+.ws-about__card {
+  background: linear-gradient(110deg, #16184c 0%, #0ca7f2 100%);
+  border-radius: 24px;
+  padding: 3rem 3rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* اليسار — النص */
+.ws-about__left {
+  flex: 0 0 280px;
+  max-width: 280px;
+}
+
+.ws-about__title {
+  font-family: var(--ws-font-display);
+  font-weight: 800;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.ws-about__desc {
+  font-family: var(--ws-font-body);
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* اليمين — الـ grid */
+.ws-about__grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+/* الكارتات الداخلية */
+.ws-acard {
+  background: rgba(13, 17, 40, 0.7);
+  border-radius: 14px;
+  padding: 1.2rem 1.1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  transition: var(--ws-ease);
+  backdrop-filter: blur(4px);
+}
+
+.ws-acard:hover {
+  background: rgba(13, 17, 40, 0.9);
+  transform: translateY(-2px);
+}
+
+/* الأيقونة */
+.ws-acard__icon {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.ws-acard__icon svg {
+  width: 26px;
+  height: 26px;
+}
+
+/* النص */
+.ws-acard__body {
+  flex: 1;
+}
+
+.ws-acard__title {
+  font-family: var(--ws-font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+}
+
+.ws-acard__desc {
+  font-family: var(--ws-font-body);
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .ws-about__card {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1.5rem;
+  }
+  .ws-about__left {
+    flex: unset;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .ws-about__grid {
+    grid-template-columns: 1fr;
+  }
+  .ws-about {
+    padding: 3rem 0;
+  }
+}
+/* ================================================
+   TECH STACK SECTION
+
+   ================================================ */
+
+.ws-tech {
+  background: var(--ws-bg-page);
+  padding: 5rem 0 4rem;
+  overflow: hidden;
+}
+
+/* Header */
+.ws-tech__header {
+  margin-bottom: 3rem;
+}
+
+.ws-tech__badge {
+  display: inline-block;
+  background: var(--ws-primary-light);
+  border: 1px solid var(--ws-primary-border);
+  color: var(--ws-primary);
+  font-family: var(--ws-font-body);
+  font-size: 0.82rem;
+  border-radius: 999px;
+  padding: 0.3rem 1rem;
+  margin-bottom: 1.1rem;
+}
+
+.ws-tech__title {
+  font-family: var(--ws-font-display);
+  font-weight: 800;
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  color: var(--ws-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+}
+
+.ws-tech__sub {
+  font-family: var(--ws-font-body);
+  font-size: 0.95rem;
+  color: var(--ws-text-body);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ── Marquee wrapper ──────────────────────────── */
+.ws-marquee {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  /* fade على الحافتين */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+}
+
+/* الـ track يحمل الأيقونات كلها في سطر */
+.ws-marquee__track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+/* Row 1 — يتحرك يسار */
+.ws-marquee--left .ws-marquee__track {
+  animation: ws-scroll-left 28s linear infinite;
+}
+
+/* Row 2 — يتحرك يمين */
+.ws-marquee--right .ws-marquee__track {
+  animation: ws-scroll-right 28s linear infinite;
+}
+
+/* يوقف عند hover */
+.ws-marquee:hover .ws-marquee__track {
+  animation-play-state: paused;
+}
+
+/* ── Keyframes ────────────────────────────────── */
+@keyframes ws-scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 0.5rem));
+  }
+}
+
+@keyframes ws-scroll-right {
+  0% {
+    transform: translateX(calc(-50% - 0.5rem));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* ── Icon card ────────────────────────────────── */
+.ws-ticon {
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--ws-ease);
+  margin-right: 1rem;
+}
+
+.ws-ticon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.12);
+}
+
+.ws-ticon img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .ws-ticon {
+    width: 58px;
+    height: 58px;
+    border-radius: 12px;
+  }
+  .ws-ticon img {
+    width: 30px;
+    height: 30px;
+  }
+  .ws-tech {
+    padding: 3rem 0 2.5rem;
+  }
+}
+/* ================================================
+   CTA SECTION
+   ================================================ */
+
+.ws-cta {
+  background: var(--ws-bg-page);
+  padding: 5rem 0;
+}
+
+/* الكارت الرئيسي */
+.ws-cta__card {
+  border-radius: 24px;
+  background: linear-gradient(105deg, #0ca7f2 0%, #1a3a8f 45%, #16184c 100%);
+  padding: 3rem 3rem;
+  position: relative;
+  overflow: hidden;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+}
+
+/* Grid pattern على اليمين */
+.ws-cta__grid-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+  background-size: 36px 36px;
+  pointer-events: none;
+}
+
+/* Content row */
+.ws-cta__content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* اليسار */
+.ws-cta__left {
+  flex: 1;
+}
+
+.ws-cta__title {
+  font-family: var(--ws-font-display);
+  font-weight: 800;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: #0d1117;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.ws-cta__desc {
+  font-family: var(--ws-font-body);
+  font-size: 0.95rem;
+  color: rgba(10, 15, 40, 0.75);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* اليمين — الزر */
+.ws-cta__right {
+  flex-shrink: 0;
+}
+
+.ws-cta__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(99, 148, 255, 0.35);
+  color: #ffffff !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  font-family: var(--ws-font-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.7rem 1.5rem;
+  backdrop-filter: blur(8px);
+  transition: var(--ws-ease);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.ws-cta__btn:hover {
+  background: rgba(99, 148, 255, 0.55);
+  border-color: rgba(255, 255, 255, 0.55);
+  transform: translateY(-2px);
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .ws-cta__content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ws-cta__card {
+    padding: 2rem 1.5rem;
+  }
+  .ws-cta__grid-overlay {
+    width: 100%;
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 480px) {
+  .ws-cta {
+    padding: 3rem 0;
+  }
+}
+/* ================================================
+   FOOTER
+
+   ================================================ */
+
+.ws-footer {
+  background: #0d1117;
+  padding: 3.5rem 0 0;
+}
+
+/* ── Top row ──────────────────────────────────── */
+.ws-footer__top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+/* Brand */
+.ws-footer__logo img {
+  height: 32px;
+  width: auto;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.ws-footer__tagline {
+  font-family: var(--ws-font-body);
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.65;
+  max-width: 300px;
+  margin-bottom: 0;
+}
+
+/* Columns */
+.ws-footer__heading {
+  font-family: var(--ws-font-display);
+  font-weight: 700;
+  font-size: 0.78rem;
+  color: #ffffff;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.1rem;
+}
+
+.ws-footer__links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ws-footer__links li {
+  margin-bottom: 0.6rem;
+}
+
+.ws-footer__links a {
+  font-family: var(--ws-font-body);
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.45);
+  text-decoration: none;
+  transition: var(--ws-ease);
+}
+
+.ws-footer__links a:hover {
+  color: #0ca7f2;
+}
+
+/* ── Middle row ───────────────────────────────── */
+.ws-footer__middle {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Design Impact box */
+.ws-footer__impact {
+  max-width: 320px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+}
+
+.ws-footer__impact p {
+  font-family: var(--ws-font-body);
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.35);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.ws-footer__impact-label {
+  color: #0ca7f2;
+  font-weight: 600;
+}
+
+/* Social */
+.ws-footer__social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.6rem;
+}
+
+.ws-footer__social-label {
+  font-family: var(--ws-font-body);
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.ws-footer__social-icons {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.ws-footer__social-icons a {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.6);
+  transition: var(--ws-ease);
+}
+
+.ws-footer__social-icons a svg {
+  width: 15px;
+  height: 15px;
+}
+
+.ws-footer__social-icons a:hover {
+  background: #0ca7f2;
+  border-color: #0ca7f2;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* ── Divider ──────────────────────────────────── */
+.ws-footer__divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ── Bottom ───────────────────────────────────── */
+.ws-footer__bottom {
+  padding: 1.2rem 0;
+}
+
+.ws-footer__bottom p {
+  font-family: var(--ws-font-body);
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.35);
+  margin-bottom: 0;
+}
+
+/* ── Responsive ───────────────────────────────── */
+@media (max-width: 991px) {
+  .ws-footer__top {
+    grid-template-columns: 1fr 1fr;
+  }
+  .ws-footer__brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 576px) {
+  .ws-footer__top {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .ws-footer__middle {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ws-footer__social {
+    align-items: flex-start;
+  }
+}

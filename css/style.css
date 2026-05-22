@@ -1292,7 +1292,8 @@ body {
     margin-top: 60px;
     padding: 60px 0 80px;
   }
-  .testimonials .container .tag{
+  .testimonials .container .tag
+  {
   display: inline-block;
   background: var(--ws-primary-light);
   border: 1px solid var(--ws-primary-border);

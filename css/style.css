@@ -1053,7 +1053,7 @@ body {
 }
 
  /* ── Services – split layout ── */
-  .services-section { background: #E8EBF0; padding: 80px 0 0; }
+  .services-section {  padding: 80px 0 0; }
   .services-section .section-title {
     font-family: var(--ff-head);
     font-size: clamp(1.6rem, 3vw, 2.2rem);

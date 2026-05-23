@@ -5,36 +5,36 @@
 
 :root {
   /* ── Brand Colors (from Figma) ─────────────── */
-  --ws-primary: #5082ef; /* Main blue — buttons, accents      */
-  --ws-primary-hover: #1d4ed8; /* Darker on hover                   */
-  --ws-primary-light: #eff6ff; /* Light blue bg — badge, tints      */
-  --ws-primary-border: #bfdbfe; /* Badge border color                */
+  --ws-primary:        #2563EB;   /* Main blue — buttons, accents      */
+  --ws-primary-hover:  #1D4ED8;   /* Darker on hover                   */
+  --ws-primary-light:  #EFF6FF;   /* Light blue bg — badge, tints      */
+  --ws-primary-border: #BFDBFE;   /* Badge border color                */
 
   /* ── Text Colors ───────────────────────────── */
-  --ws-text-dark: #111827; /* H1 headlines                      */
-  --ws-text-body: #4b5563; /* Description / body text           */
-  --ws-text-nav: #374151; /* Navbar links                      */
-  --ws-text-muted: #6b7280; /* Stats label, secondary text       */
+  --ws-text-dark:      #111827;   /* H1 headlines                      */
+  --ws-text-body:      #4B5563;   /* Description / body text           */
+  --ws-text-nav:       #374151;   /* Navbar links                      */
+  --ws-text-muted:     #6B7280;   /* Stats label, secondary text       */
 
   /* ── Backgrounds ───────────────────────────── */
-  --ws-bg-page: #edeef2; /* Hero section bg (light gray)      */
-  --ws-bg-white: #ffffff; /* Navbar + stat cards               */
-  --ws-bg-card: #ffffff; /* Stat cards                        */
+  --ws-bg-page:        #EDEEF2;   /* Hero section bg (light gray)      */
+  --ws-bg-white:       #FFFFFF;   /* Navbar + stat cards               */
+  --ws-bg-card:        #FFFFFF;   /* Stat cards                        */
 
   /* ── Borders & Shadows ─────────────────────── */
-  --ws-border: #e5e7eb;
-  --ws-shadow-card: 0 2px 12px rgba(0, 0, 0, 0.07);
-  --ws-shadow-btn: 0 4px 14px rgba(37, 99, 235, 0.3);
+  --ws-border:         #E5E7EB;
+  --ws-shadow-card:    0 2px 12px rgba(0, 0, 0, 0.07);
+  --ws-shadow-btn:     0 4px 14px rgba(37, 99, 235, 0.30);
 
   /* ── Typography ────────────────────────────── */
-  --ws-font-display: "Sora", sans-serif;
-  --ws-font-body: "Inter", sans-serif;
+  --ws-font-display:   'Sora', sans-serif;
+  --ws-font-body:      'Inter', sans-serif;
 
   /* ── Radius ─────────────────────────────────── */
-  --ws-radius-pill: 999px;
-  --ws-radius-btn: 8px;
-  --ws-radius-card: 14px;
+  --ws-radius-pill:    999px;
+  --ws-radius-btn:     8px;
+  --ws-radius-card:    14px;
 
   /* ── Transitions ────────────────────────────── */
-  --ws-ease: all 0.22s ease;
+  --ws-ease:           all 0.22s ease;
 }

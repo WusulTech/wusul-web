@@ -32,3 +32,28 @@ document.querySelectorAll('a[href^="#"]').forEach(function (link) {
     window.scrollTo({ top: top, behavior: "smooth" });
   });
 });
+
+/* FAQ accordion */
+(function () {
+  var faqButtons = document.querySelectorAll('.faq-q');
+  if (!faqButtons.length) return;
+
+  faqButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      var item = this.closest('.faq-item');
+      var isOpen = item.classList.contains('open');
+
+      document.querySelectorAll('.faq-item.open').forEach(function (openItem) {
+        if (openItem !== item) {
+          openItem.classList.remove('open');
+        }
+      });
+
+      if (isOpen) {
+        item.classList.remove('open');
+      } else {
+        item.classList.add('open');
+      }
+    });
+  });
+})();

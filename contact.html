@@ -1,10 +1,15 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Get in Touch — Wusul" />
-    <title>Contact Us | Wusul</title>
+    <title>Wusul | Contact Us</title>
+    <link rel="icon" type="image/png" href="assets/icons/logo.png" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -83,7 +88,7 @@
     <section class="ws-contact">
       <div class="container">
         <!-- Header -->
-        <div class="ws-contact__header text-center">
+        <div class="ws-contact__header text-center" data-aos="fade-up">
           <h2 class="ws-contact__title">Get in Touch</h2>
           <p class="ws-contact__sub">
             We're here to answer your questions, discuss your project, and
@@ -94,24 +99,19 @@
 
         <div class="ws-contact__body">
           <!-- Left -->
-          <div class="ws-contact__left">
+          <div class="ws-contact__left" data-aos="fade-right">
             <!-- Blue visual card -->
-            <div class="ws-contact__visual">
-              <div class="ws-bubbles">
-                <div class="ws-bubble ws-bubble--1"></div>
-                <div class="ws-bubble ws-bubble--2"></div>
-                <div class="ws-bubble ws-bubble--3"></div>
-                <div class="ws-bubble ws-bubble--4"></div>
-                <div class="ws-bubble ws-bubble--5"></div>
-                <div class="ws-bubble ws-bubble--6"></div>
-                <div class="ws-bubble ws-bubble--7"></div>
-                <div class="ws-bubble ws-bubble--8"></div>
-              </div>
+            <div class="ws-contact-visual">
+              <img
+                src="assets/images/CTA ENGLISH.png"
+                alt=""
+                class="ws-contact__visual-img"
+              />
             </div>
 
             <!-- Info cards -->
             <div class="ws-contact__info">
-              <div class="ws-info-card">
+              <div class="ws-info-card" data-aos="fade-up" data-aos-delay="100">
                 <div class="ws-info-card__icon">
                   <svg
                     viewBox="0 0 24 24"
@@ -131,7 +131,7 @@
                 </div>
               </div>
 
-              <div class="ws-info-card">
+              <div class="ws-info-card" data-aos="fade-up" data-aos-delay="200">
                 <div class="ws-info-card__icon">
                   <svg
                     viewBox="0 0 24 24"
@@ -152,7 +152,7 @@
                 </div>
               </div>
 
-              <div class="ws-info-card">
+              <div class="ws-info-card" data-aos="fade-up" data-aos-delay="300">
                 <div class="ws-info-card__icon">
                   <svg
                     viewBox="0 0 24 24"
@@ -174,7 +174,7 @@
                 </div>
               </div>
 
-              <div class="ws-info-card">
+              <div class="ws-info-card" data-aos="fade-up" data-aos-delay="400">
                 <div class="ws-info-card__icon">
                   <svg
                     viewBox="0 0 24 24"
@@ -197,11 +197,10 @@
           </div>
 
           <!-- Right — Form -->
-          <div class="ws-contact__right">
-            <h4 class="ws-form__title">
+          <div class="ws-contact__right" data-aos="fade-up" data-aos-delay="100">
+            <h4 class="ws-form__title" >
               Share your idea and we'll get back to you…
             </h4>
-            <p class="ws-form__sub">
               Do you have an idea or inquiry? Fill in your details and we'll get
               back to you within 24 hours.
             </p>
@@ -257,7 +256,7 @@
                 ></textarea>
               </div>
 
-              <button type="submit" class="ws-form__btn">
+              <button type="submit" class="ws-form__btn" data-aos="fade-up" data-aos-delay="100">
                 <svg
                   width="16"
                   height="16"
@@ -286,7 +285,7 @@
     <!-- ============================================
        FOOTER 
   ============================================= -->
-    <footer class="ws-footer">
+    <footer class="ws-footer" data-aos="fade-up">
       <div class="container">
         <!-- Top row -->
         <div class="ws-footer__top">
@@ -302,7 +301,7 @@
           </div>
 
           <!-- Services -->
-          <div class="ws-footer__col">
+          <div class="ws-footer__col" data-aos="fade-up" data-aos-delay="100">
             <h6 class="ws-footer__heading">SERVICES</h6>
             <ul class="ws-footer__links">
               <li><a href="#">UI/UX Design</a></li>
@@ -313,7 +312,7 @@
           </div>
 
           <!-- Company -->
-          <div class="ws-footer__col">
+          <div class="ws-footer__col" data-aos="fade-up" data-aos-delay="200">
             <h6 class="ws-footer__heading">COMPANY</h6>
             <ul class="ws-footer__links">
               <li><a href="#about">About Wusul</a></li>
@@ -324,7 +323,7 @@
           </div>
 
           <!-- Connect -->
-          <div class="ws-footer__col">
+          <div class="ws-footer__col" data-aos="fade-up" data-aos-delay="300">
             <h6 class="ws-footer__heading">Connect</h6>
             <ul class="ws-footer__links">
               <li><a href="tel:+972597705019">+972597705019</a></li>
@@ -397,5 +396,13 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 600,
+        once: true,
+        offset: 80,
+      });
+    </script>
   </body>
 </html>

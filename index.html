@@ -1,6 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -8,6 +12,7 @@
       content="Wusul — Your software development partner handles everything. No bugs, no crashes."
     />
     <title>Wusul | Software Development Partner</title>
+    <link rel="icon" type="image/png" href="assets/icons/logo.png" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -86,25 +91,31 @@
         <div class="row justify-content-center">
           <div class="col-lg-9 col-xl-8 text-center">
             <!-- Top badge -->
-            <div class="ws-badge-pill">
+            <div class="ws-badge-pill" data-aos="fade-down">
               Launch your product. Reach your digital peak with Wosoul.
             </div>
 
             <!-- Headline -->
-            <h1 class="ws-hero-h1">
+            <h1 class="ws-hero-h1" data-aos="fade-up" data-aos-delay="100">
               Your software development partner handles everything
             </h1>
-            <h1 class="ws-hero-h1 ws-hero-h1--blue">no bugs , no crashes.</h1>
+            <h1
+              class="ws-hero-h1 ws-hero-h1--blue"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              no bugs , no crashes.
+            </h1>
 
             <!-- Description -->
-            <p class="ws-hero-desc">
+            <p class="ws-hero-desc" data-aos="fade-up" data-aos-delay="300">
               Ongoing software development and technical support for growing
               businesses that need reliability, speed, and peace of mind,
               without hiring an in-house team or juggling multiple freelancers.
             </p>
 
             <!-- Buttons -->
-            <div class="ws-hero-btns">
+            <div class="ws-hero-btns" data-aos="fade-up" data-aos-delay="400">
               <a href="#contact" class="btn ws-btn-primary">Free Tech Audit</a>
               <a href="#services" class="btn ws-btn-outline">Our Services</a>
             </div>
@@ -112,31 +123,10 @@
             <!-- Stats -->
             <div class="row justify-content-center ws-stats">
               <div class="col-4 col-sm-3">
-                <div class="ws-stat">
+                <div class="ws-stat" data-aos="zoom-in" data-aos-delay="100">
                   <div class="ws-stat-icon">
                     <!-- Client icon -->
-                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
-                      <circle
-                        cx="17"
-                        cy="11"
-                        r="5.5"
-                        stroke="#0CA7F2 "
-                        stroke-width="1.6"
-                      />
-                      <path
-                        d="M6 28c0-6.075 4.925-11 11-11s11 4.925 11 11"
-                        stroke="#0CA7F2 "
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                      />
-                      <path
-                        d="M21 9l2.5 2.5L28 7"
-                        stroke="#0CA7F2 "
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
+                    <img src="assets/icons/hero1.png" />
                   </div>
                   <div class="ws-stat-num">+50</div>
                   <div class="ws-stat-lbl">Satisfied Clients</div>
@@ -144,32 +134,10 @@
               </div>
 
               <div class="col-4 col-sm-3">
-                <div class="ws-stat">
+                <div class="ws-stat" data-aos="zoom-in" data-aos-delay="200">
                   <div class="ws-stat-icon">
                     <!-- Handshake icon -->
-                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
-                      <path
-                        d="M4 14l6-4h4l4 4h4l6-4"
-                        stroke="#0CA7F2 "
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M4 14v6l5 4 4-3 4 3 5-4v-6"
-                        stroke="#0CA7F2 "
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M13 18l4 3 4-3"
-                        stroke="#0CA7F2 "
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
+                    <img src="assets/icons/hero2.png" />
                   </div>
                   <div class="ws-stat-num">+120</div>
                   <div class="ws-stat-lbl">Completed Projects</div>
@@ -177,31 +145,10 @@
               </div>
 
               <div class="col-4 col-sm-3">
-                <div class="ws-stat">
+                <div class="ws-stat" data-aos="zoom-in" data-aos-delay="300">
                   <div class="ws-stat-icon">
                     <!-- Years / award icon -->
-                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
-                      <circle
-                        cx="17"
-                        cy="15"
-                        r="9"
-                        stroke="#0CA7F2 "
-                        stroke-width="1.6"
-                      />
-                      <path
-                        d="M17 7v8l5 3"
-                        stroke="#0CA7F2 "
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M11 27l2-3M23 27l-2-3"
-                        stroke="#0CA7F2 "
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                      />
-                    </svg>
+                    <img src="assets/icons/hero3.png" />
                   </div>
                   <div class="ws-stat-num">+5</div>
                   <div class="ws-stat-lbl">Years Active</div>
@@ -213,7 +160,7 @@
         </div>
 
         <!-- Trusted By -->
-        <div class="ws-trusted text-center">
+        <div class="ws-trusted text-center" data-aos="fade-up">
           <p class="ws-trusted-title">Trusted by ambitious eCommerce teams</p>
           <img
             src="assets/images/trusted-logos.png"
@@ -236,242 +183,692 @@
       </div>
     </section>
 
-
     <!-- ── SERVICES ── -->
-<section class="services-section" id="services">
+    <section class="services-section" id="services">
+      <h2 class="section-title" data-aos>Our <span>Services</span></h2>
 
-  <h2 class="section-title" data-aos>Our <span>Services</span></h2>
-
-  <!-- SERVICE 01 -->
-  <div class="svc-block" data-aos>
-    <!-- Visual side -->
-    <div class="svc-visual">
-      <div class="laptop-wrap">
-        <div class="laptop-shell">
-          <div class="laptop-screen">
-            <div class="screen-ui">
-              <!-- Top bar -->
-              <div class="ui-topbar">
-                <div class="ui-dot" style="background:#FF5F57"></div>
-                <div class="ui-dot" style="background:#FFBD2E"></div>
-                <div class="ui-dot" style="background:#28C840"></div>
-                <div class="ui-topbar-text"></div>
-              </div>
-              <!-- Pricing heading -->
-              <div class="ui-pricing-heading">
-                <div class="ui-ph-title"></div>
-                <div class="ui-ph-sub"></div>
-              </div>
-              <!-- Plan cards -->
-              <div class="ui-cards-row">
-                <div class="ui-plan starter">
-                  <div class="ui-plan-label"></div>
-                  <div class="ui-plan-price" style="width:30%"></div>
-                  <div class="ui-plan-line"></div>
-                  <div class="ui-plan-line short"></div>
-                  <div class="ui-plan-line"></div>
-                  <div class="ui-plan-line short"></div>
-                </div>
-                <div class="ui-plan growth">
-                  <div class="ui-plan-label"></div>
-                  <div class="ui-plan-price"></div>
-                  <div class="ui-plan-line"></div>
-                  <div class="ui-plan-line short"></div>
-                  <div class="ui-plan-line"></div>
-                  <div class="ui-plan-line short"></div>
-                </div>
-                <div class="ui-plan scale">
-                  <div class="ui-plan-label" style="background:rgba(255,255,255,.7)"></div>
-                  <div class="ui-plan-price" style="background:#fff"></div>
-                  <div class="ui-plan-line" style="background:rgba(255,255,255,.4)"></div>
-                  <div class="ui-plan-line short" style="background:rgba(255,255,255,.4)"></div>
-                  <div class="ui-plan-line" style="background:rgba(255,255,255,.4)"></div>
-                  <div class="ui-plan-line short" style="background:rgba(255,255,255,.4)"></div>
-                </div>
-              </div>
-              <!-- Footer bars -->
-              <div class="ui-footer-bar">
-                <div class="ui-footer-pill"></div>
-                <div class="ui-footer-pill"></div>
-              </div>
-              <!-- FAQ rows -->
-              <div class="ui-faq-row">
-                <div class="ui-faq-item"></div>
-                <div class="ui-faq-item"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="laptop-base"></div>
-        <div class="laptop-foot"></div>
-      </div>
-    </div>
-
-    <!-- Content side -->
-    <div class="svc-content">
-      <div class="svc-content-inner">
-        <h3 class="svc-title"><span class="highlight">01 / PRODUCT DESIGN &<br>WEB ENGINEERING</span></h3>
-        <p class="svc-tagline">Design &amp; development of high-performance web platforms that convert users and scale your business.</p>
-        <p class="svc-desc">We craft premium, conversion-driven user experiences from the ground up. By blending deep behavioral research with clean, modern web engineering, we transform your complex workflows into seamless, pixel-perfect digital platforms engineered for ultimate market leadership.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- SERVICE 02 -->
-  <div class="svc-block reverse" data-aos>
-    <div class="svc-content">
-      <div class="svc-content-inner">
-        <h3 class="svc-title"><span class="highlight">02 / FULL-STACK<br>ENGINEERING &<br>PLATFORMS</span></h3>
-        <p class="svc-tagline">Building lightning-fast websites and custom web platforms designed for seamless performance.</p>
-        <p class="svc-desc">From scalable REST APIs to real-time dashboards, we architect robust backend systems paired with polished, high-performing frontends. Our engineering process prioritizes speed, reliability, and developer experience at every layer of the stack.</p>
-      </div>
-    </div>
-    <div class="svc-visual" style="background:#C8CDD8;">
-      <div class="laptop-wrap">
-        <div class="laptop-shell">
-          <div class="laptop-screen">
-            <div class="screen-ui" style="background: linear-gradient(135deg,#0a2540 0%,#0d3b6e 60%,#0a1628 100%);">
-              <div class="ui-topbar">
-                <div class="ui-dot" style="background:#FF5F57"></div>
-                <div class="ui-dot" style="background:#FFBD2E"></div>
-                <div class="ui-dot" style="background:#28C840"></div>
-                <div class="ui-topbar-text"></div>
-              </div>
-              <div style="display:flex;gap:8px;flex:1;margin-top:8px;">
-                <div style="width:22%;background:rgba(255,255,255,.06);border-radius:6px;padding:8px;display:flex;flex-direction:column;gap:6px;">
-                  <div style="height:6px;width:80%;background:rgba(255,255,255,.3);border-radius:3px;"></div>
-                  <div style="height:5px;width:60%;background:rgba(255,255,255,.15);border-radius:3px;"></div>
-                  <div style="height:5px;background:rgba(255,255,255,.15);border-radius:3px;"></div>
-                  <div style="height:5px;width:70%;background:rgba(255,255,255,.15);border-radius:3px;"></div>
-                  <div style="height:5px;background:rgba(255,255,255,.15);border-radius:3px;"></div>
-                </div>
-                <div style="flex:1;display:flex;flex-direction:column;gap:8px;">
-                  <div style="display:flex;gap:8px;">
-                    <div style="flex:1;height:52px;background:rgba(37,99,235,.25);border-radius:6px;border:1px solid rgba(37,99,235,.4);"></div>
-                    <div style="flex:1;height:52px;background:rgba(6,182,212,.2);border-radius:6px;border:1px solid rgba(6,182,212,.3);"></div>
-                    <div style="flex:1;height:52px;background:rgba(139,92,246,.2);border-radius:6px;border:1px solid rgba(139,92,246,.3);"></div>
+      <!-- SERVICE 01 -->
+      <div class="svc-block" data-aos>
+        <!-- Visual side -->
+        <div class="svc-visual">
+          <div class="laptop-wrap">
+            <div class="laptop-shell">
+              <div class="laptop-screen">
+                <div class="screen-ui">
+                  <!-- Top bar -->
+                  <div class="ui-topbar">
+                    <div class="ui-dot" style="background: #ff5f57"></div>
+                    <div class="ui-dot" style="background: #ffbd2e"></div>
+                    <div class="ui-dot" style="background: #28c840"></div>
+                    <div class="ui-topbar-text"></div>
                   </div>
-                  <div style="flex:1;background:rgba(255,255,255,.05);border-radius:6px;padding:8px;display:flex;flex-direction:column;gap:5px;">
-                    <div style="height:6px;width:40%;background:rgba(255,255,255,.4);border-radius:3px;"></div>
-                    <div style="height:5px;background:rgba(255,255,255,.15);border-radius:3px;"></div>
-                    <div style="height:5px;width:80%;background:rgba(255,255,255,.15);border-radius:3px;"></div>
-                    <div style="height:5px;background:rgba(255,255,255,.15);border-radius:3px;"></div>
+                  <!-- Pricing heading -->
+                  <div class="ui-pricing-heading">
+                    <div class="ui-ph-title"></div>
+                    <div class="ui-ph-sub"></div>
+                  </div>
+                  <!-- Plan cards -->
+                  <div class="ui-cards-row">
+                    <div class="ui-plan starter">
+                      <div class="ui-plan-label"></div>
+                      <div class="ui-plan-price" style="width: 30%"></div>
+                      <div class="ui-plan-line"></div>
+                      <div class="ui-plan-line short"></div>
+                      <div class="ui-plan-line"></div>
+                      <div class="ui-plan-line short"></div>
+                    </div>
+                    <div class="ui-plan growth">
+                      <div class="ui-plan-label"></div>
+                      <div class="ui-plan-price"></div>
+                      <div class="ui-plan-line"></div>
+                      <div class="ui-plan-line short"></div>
+                      <div class="ui-plan-line"></div>
+                      <div class="ui-plan-line short"></div>
+                    </div>
+                    <div class="ui-plan scale">
+                      <div
+                        class="ui-plan-label"
+                        style="background: rgba(255, 255, 255, 0.7)"
+                      ></div>
+                      <div class="ui-plan-price" style="background: #fff"></div>
+                      <div
+                        class="ui-plan-line"
+                        style="background: rgba(255, 255, 255, 0.4)"
+                      ></div>
+                      <div
+                        class="ui-plan-line short"
+                        style="background: rgba(255, 255, 255, 0.4)"
+                      ></div>
+                      <div
+                        class="ui-plan-line"
+                        style="background: rgba(255, 255, 255, 0.4)"
+                      ></div>
+                      <div
+                        class="ui-plan-line short"
+                        style="background: rgba(255, 255, 255, 0.4)"
+                      ></div>
+                    </div>
+                  </div>
+                  <!-- Footer bars -->
+                  <div class="ui-footer-bar">
+                    <div class="ui-footer-pill"></div>
+                    <div class="ui-footer-pill"></div>
+                  </div>
+                  <!-- FAQ rows -->
+                  <div class="ui-faq-row">
+                    <div class="ui-faq-item"></div>
+                    <div class="ui-faq-item"></div>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="laptop-base"></div>
+            <div class="laptop-foot"></div>
           </div>
         </div>
-        <div class="laptop-base"></div>
-        <div class="laptop-foot"></div>
-      </div>
-    </div>
-  </div>
 
-  <!-- SERVICE 03 -->
-  <div class="svc-block" data-aos>
-    <div class="svc-visual" style="background:#D0D5DE;">
-      <div class="laptop-wrap">
-        <div class="laptop-shell">
-          <div class="laptop-screen">
-            <div class="screen-ui" style="background:linear-gradient(135deg,#064e3b 0%,#065f46 50%,#0a1628 100%);">
-              <div class="ui-topbar">
-                <div class="ui-dot" style="background:#FF5F57"></div>
-                <div class="ui-dot" style="background:#FFBD2E"></div>
-                <div class="ui-dot" style="background:#28C840"></div>
-                <div class="ui-topbar-text"></div>
-              </div>
-              <div style="display:flex;gap:8px;flex:1;margin-top:8px;">
-                <div style="flex:1;background:rgba(255,255,255,.07);border-radius:6px;padding:8px;display:flex;flex-direction:column;gap:6px;">
-                  <div style="height:6px;width:50%;background:rgba(255,255,255,.6);border-radius:3px;"></div>
-                  <div style="height:22px;background:rgba(16,185,129,.3);border-radius:4px;border:1px solid rgba(16,185,129,.5);margin-top:4px;"></div>
-                  <div style="height:5px;background:rgba(255,255,255,.15);border-radius:3px;"></div>
-                  <div style="height:5px;width:70%;background:rgba(255,255,255,.15);border-radius:3px;"></div>
-                  <div style="height:5px;background:rgba(255,255,255,.15);border-radius:3px;"></div>
-                  <div style="height:5px;width:80%;background:rgba(255,255,255,.15);border-radius:3px;"></div>
-                  <div style="height:14px;background:rgba(16,185,129,.5);border-radius:4px;margin-top:6px;"></div>
-                </div>
-                <div style="flex:1;background:rgba(255,255,255,.05);border-radius:6px;padding:8px;display:flex;flex-direction:column;gap:5px;">
-                  <div style="height:6px;width:60%;background:rgba(255,255,255,.4);border-radius:3px;"></div>
-                  <div style="flex:1;display:flex;flex-direction:column;gap:5px;margin-top:4px;">
-                    <div style="height:5px;background:rgba(255,255,255,.15);border-radius:3px;"></div>
-                    <div style="height:5px;width:85%;background:rgba(255,255,255,.15);border-radius:3px;"></div>
-                    <div style="height:5px;background:rgba(255,255,255,.15);border-radius:3px;"></div>
-                    <div style="height:5px;width:70%;background:rgba(255,255,255,.15);border-radius:3px;"></div>
+        <!-- Content side -->
+        <div class="svc-content">
+          <div class="svc-content-inner">
+            <h3 class="svc-title">
+              <span class="highlight"
+                >01 / PRODUCT DESIGN &<br />WEB ENGINEERING</span
+              >
+            </h3>
+            <p class="svc-tagline">
+              Design &amp; development of high-performance web platforms that
+              convert users and scale your business.
+            </p>
+            <p class="svc-desc">
+              We craft premium, conversion-driven user experiences from the
+              ground up. By blending deep behavioral research with clean, modern
+              web engineering, we transform your complex workflows into
+              seamless, pixel-perfect digital platforms engineered for ultimate
+              market leadership.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SERVICE 02 -->
+      <div class="svc-block reverse" data-aos>
+        <div class="svc-content">
+          <div class="svc-content-inner">
+            <h3 class="svc-title">
+              <span class="highlight"
+                >02 / FULL-STACK<br />ENGINEERING &<br />PLATFORMS</span
+              >
+            </h3>
+            <p class="svc-tagline">
+              Building lightning-fast websites and custom web platforms designed
+              for seamless performance.
+            </p>
+            <p class="svc-desc">
+              From scalable REST APIs to real-time dashboards, we architect
+              robust backend systems paired with polished, high-performing
+              frontends. Our engineering process prioritizes speed, reliability,
+              and developer experience at every layer of the stack.
+            </p>
+          </div>
+        </div>
+        <div class="svc-visual" style="background: #c8cdd8">
+          <div class="laptop-wrap">
+            <div class="laptop-shell">
+              <div class="laptop-screen">
+                <div
+                  class="screen-ui"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      #0a2540 0%,
+                      #0d3b6e 60%,
+                      #0a1628 100%
+                    );
+                  "
+                >
+                  <div class="ui-topbar">
+                    <div class="ui-dot" style="background: #ff5f57"></div>
+                    <div class="ui-dot" style="background: #ffbd2e"></div>
+                    <div class="ui-dot" style="background: #28c840"></div>
+                    <div class="ui-topbar-text"></div>
+                  </div>
+                  <div
+                    style="display: flex; gap: 8px; flex: 1; margin-top: 8px"
+                  >
+                    <div
+                      style="
+                        width: 22%;
+                        background: rgba(255, 255, 255, 0.06);
+                        border-radius: 6px;
+                        padding: 8px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 6px;
+                      "
+                    >
+                      <div
+                        style="
+                          height: 6px;
+                          width: 80%;
+                          background: rgba(255, 255, 255, 0.3);
+                          border-radius: 3px;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          height: 5px;
+                          width: 60%;
+                          background: rgba(255, 255, 255, 0.15);
+                          border-radius: 3px;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          height: 5px;
+                          background: rgba(255, 255, 255, 0.15);
+                          border-radius: 3px;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          height: 5px;
+                          width: 70%;
+                          background: rgba(255, 255, 255, 0.15);
+                          border-radius: 3px;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          height: 5px;
+                          background: rgba(255, 255, 255, 0.15);
+                          border-radius: 3px;
+                        "
+                      ></div>
+                    </div>
+                    <div
+                      style="
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+                      "
+                    >
+                      <div style="display: flex; gap: 8px">
+                        <div
+                          style="
+                            flex: 1;
+                            height: 52px;
+                            background: rgba(37, 99, 235, 0.25);
+                            border-radius: 6px;
+                            border: 1px solid rgba(37, 99, 235, 0.4);
+                          "
+                        ></div>
+                        <div
+                          style="
+                            flex: 1;
+                            height: 52px;
+                            background: rgba(6, 182, 212, 0.2);
+                            border-radius: 6px;
+                            border: 1px solid rgba(6, 182, 212, 0.3);
+                          "
+                        ></div>
+                        <div
+                          style="
+                            flex: 1;
+                            height: 52px;
+                            background: rgba(139, 92, 246, 0.2);
+                            border-radius: 6px;
+                            border: 1px solid rgba(139, 92, 246, 0.3);
+                          "
+                        ></div>
+                      </div>
+                      <div
+                        style="
+                          flex: 1;
+                          background: rgba(255, 255, 255, 0.05);
+                          border-radius: 6px;
+                          padding: 8px;
+                          display: flex;
+                          flex-direction: column;
+                          gap: 5px;
+                        "
+                      >
+                        <div
+                          style="
+                            height: 6px;
+                            width: 40%;
+                            background: rgba(255, 255, 255, 0.4);
+                            border-radius: 3px;
+                          "
+                        ></div>
+                        <div
+                          style="
+                            height: 5px;
+                            background: rgba(255, 255, 255, 0.15);
+                            border-radius: 3px;
+                          "
+                        ></div>
+                        <div
+                          style="
+                            height: 5px;
+                            width: 80%;
+                            background: rgba(255, 255, 255, 0.15);
+                            border-radius: 3px;
+                          "
+                        ></div>
+                        <div
+                          style="
+                            height: 5px;
+                            background: rgba(255, 255, 255, 0.15);
+                            border-radius: 3px;
+                          "
+                        ></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="laptop-base"></div>
+            <div class="laptop-foot"></div>
           </div>
         </div>
-        <div class="laptop-base"></div>
-        <div class="laptop-foot"></div>
       </div>
-    </div>
-    <div class="svc-content" style="background:#BDC3D0;">
-      <div class="svc-content-inner">
-        <h3 class="svc-title"><span class="highlight">03 / CUSTOM SAAS<br>& CLOUD SOLUTIONS</span></h3>
-        <p class="svc-tagline">We develop secure cloud infrastructure and scalable SaaS products to automate your operations.</p>
-        <p class="svc-desc">We build end-to-end SaaS platforms tailored to your business logic — from multi-tenant architectures and billing integrations to automated workflows. Our cloud-first approach ensures your product stays fast, secure, and scalable as you grow.</p>
-      </div>
-    </div>
-  </div>
 
-  <!-- SERVICE 04 -->
-  <div class="svc-block reverse" data-aos>
-    <div class="svc-content" style="background:#BDC3D0;">
-      <div class="svc-content-inner">
-        <h3 class="svc-title"><span class="highlight">04 / MOBILE APP<br>DEVELOPMENT</span></h3>
-        <p class="svc-tagline">High-performance iOS & Android applications engineered for eCommerce conversion.</p>
-        <p class="svc-desc">We design and build native-quality mobile experiences that feel fast, look beautiful, and drive measurable results. From onboarding flows to push notifications and offline mode — every detail is crafted to keep your users engaged and coming back.</p>
-      </div>
-    </div>
-    <div class="svc-visual" style="background:#C5CBD6;">
-      <div class="laptop-wrap">
-        <div class="laptop-shell">
-          <div class="laptop-screen">
-            <div class="screen-ui" style="background:linear-gradient(135deg,#18181b 0%,#27272a 50%,#09090b 100%);">
-              <div class="ui-topbar">
-                <div class="ui-dot" style="background:#FF5F57"></div>
-                <div class="ui-dot" style="background:#FFBD2E"></div>
-                <div class="ui-dot" style="background:#28C840"></div>
-                <div class="ui-topbar-text"></div>
-              </div>
-              <div style="display:flex;gap:8px;flex:1;margin-top:8px;justify-content:center;align-items:flex-start;">
-                <!-- Phone mockup inside laptop -->
-                <div style="width:38%;background:#1c1c1e;border-radius:18px;border:2px solid #3a3a3c;padding:10px 8px;display:flex;flex-direction:column;gap:5px;">
-                  <div style="height:6px;width:30%;background:rgba(255,255,255,.4);border-radius:3px;margin:0 auto;"></div>
-                  <div style="height:36px;background:linear-gradient(135deg,rgba(37,99,235,.4),rgba(6,182,212,.3));border-radius:8px;margin-top:4px;"></div>
-                  <div style="height:5px;background:rgba(255,255,255,.15);border-radius:3px;"></div>
-                  <div style="height:5px;width:75%;background:rgba(255,255,255,.1);border-radius:3px;"></div>
-                  <div style="display:flex;gap:4px;margin-top:4px;">
-                    <div style="flex:1;height:22px;background:rgba(255,255,255,.08);border-radius:5px;"></div>
-                    <div style="flex:1;height:22px;background:rgba(255,255,255,.08);border-radius:5px;"></div>
+      <!-- SERVICE 03 -->
+      <div class="svc-block" data-aos>
+        <div class="svc-visual" style="background: #d0d5de">
+          <div class="laptop-wrap">
+            <div class="laptop-shell">
+              <div class="laptop-screen">
+                <div
+                  class="screen-ui"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      #064e3b 0%,
+                      #065f46 50%,
+                      #0a1628 100%
+                    );
+                  "
+                >
+                  <div class="ui-topbar">
+                    <div class="ui-dot" style="background: #ff5f57"></div>
+                    <div class="ui-dot" style="background: #ffbd2e"></div>
+                    <div class="ui-dot" style="background: #28c840"></div>
+                    <div class="ui-topbar-text"></div>
                   </div>
-                  <div style="height:14px;background:rgba(37,99,235,.5);border-radius:5px;margin-top:4px;"></div>
-                </div>
-                <div style="width:38%;background:#1c1c1e;border-radius:18px;border:2px solid #3a3a3c;padding:10px 8px;margin-top:20px;display:flex;flex-direction:column;gap:5px;">
-                  <div style="height:6px;width:30%;background:rgba(255,255,255,.4);border-radius:3px;margin:0 auto;"></div>
-                  <div style="height:36px;background:linear-gradient(135deg,rgba(139,92,246,.4),rgba(236,72,153,.3));border-radius:8px;margin-top:4px;"></div>
-                  <div style="height:5px;background:rgba(255,255,255,.15);border-radius:3px;"></div>
-                  <div style="height:5px;width:75%;background:rgba(255,255,255,.1);border-radius:3px;"></div>
-                  <div style="display:flex;gap:4px;margin-top:4px;">
-                    <div style="flex:1;height:22px;background:rgba(255,255,255,.08);border-radius:5px;"></div>
-                    <div style="flex:1;height:22px;background:rgba(255,255,255,.08);border-radius:5px;"></div>
+                  <div
+                    style="display: flex; gap: 8px; flex: 1; margin-top: 8px"
+                  >
+                    <div
+                      style="
+                        flex: 1;
+                        background: rgba(255, 255, 255, 0.07);
+                        border-radius: 6px;
+                        padding: 8px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 6px;
+                      "
+                    >
+                      <div
+                        style="
+                          height: 6px;
+                          width: 50%;
+                          background: rgba(255, 255, 255, 0.6);
+                          border-radius: 3px;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          height: 22px;
+                          background: rgba(16, 185, 129, 0.3);
+                          border-radius: 4px;
+                          border: 1px solid rgba(16, 185, 129, 0.5);
+                          margin-top: 4px;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          height: 5px;
+                          background: rgba(255, 255, 255, 0.15);
+                          border-radius: 3px;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          height: 5px;
+                          width: 70%;
+                          background: rgba(255, 255, 255, 0.15);
+                          border-radius: 3px;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          height: 5px;
+                          background: rgba(255, 255, 255, 0.15);
+                          border-radius: 3px;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          height: 5px;
+                          width: 80%;
+                          background: rgba(255, 255, 255, 0.15);
+                          border-radius: 3px;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          height: 14px;
+                          background: rgba(16, 185, 129, 0.5);
+                          border-radius: 4px;
+                          margin-top: 6px;
+                        "
+                      ></div>
+                    </div>
+                    <div
+                      style="
+                        flex: 1;
+                        background: rgba(255, 255, 255, 0.05);
+                        border-radius: 6px;
+                        padding: 8px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                      "
+                    >
+                      <div
+                        style="
+                          height: 6px;
+                          width: 60%;
+                          background: rgba(255, 255, 255, 0.4);
+                          border-radius: 3px;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          flex: 1;
+                          display: flex;
+                          flex-direction: column;
+                          gap: 5px;
+                          margin-top: 4px;
+                        "
+                      >
+                        <div
+                          style="
+                            height: 5px;
+                            background: rgba(255, 255, 255, 0.15);
+                            border-radius: 3px;
+                          "
+                        ></div>
+                        <div
+                          style="
+                            height: 5px;
+                            width: 85%;
+                            background: rgba(255, 255, 255, 0.15);
+                            border-radius: 3px;
+                          "
+                        ></div>
+                        <div
+                          style="
+                            height: 5px;
+                            background: rgba(255, 255, 255, 0.15);
+                            border-radius: 3px;
+                          "
+                        ></div>
+                        <div
+                          style="
+                            height: 5px;
+                            width: 70%;
+                            background: rgba(255, 255, 255, 0.15);
+                            border-radius: 3px;
+                          "
+                        ></div>
+                      </div>
+                    </div>
                   </div>
-                  <div style="height:14px;background:rgba(139,92,246,.5);border-radius:5px;margin-top:4px;"></div>
                 </div>
               </div>
             </div>
+            <div class="laptop-base"></div>
+            <div class="laptop-foot"></div>
           </div>
         </div>
-        <div class="laptop-base"></div>
-        <div class="laptop-foot"></div>
+        <div class="svc-content" style="background: #bdc3d0">
+          <div class="svc-content-inner">
+            <h3 class="svc-title">
+              <span class="highlight"
+                >03 / CUSTOM SAAS<br />& CLOUD SOLUTIONS</span
+              >
+            </h3>
+            <p class="svc-tagline">
+              We develop secure cloud infrastructure and scalable SaaS products
+              to automate your operations.
+            </p>
+            <p class="svc-desc">
+              We build end-to-end SaaS platforms tailored to your business logic
+              — from multi-tenant architectures and billing integrations to
+              automated workflows. Our cloud-first approach ensures your product
+              stays fast, secure, and scalable as you grow.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-</section>
+      <!-- SERVICE 04 -->
+      <div class="svc-block reverse" data-aos>
+        <div class="svc-content" style="background: #bdc3d0">
+          <div class="svc-content-inner">
+            <h3 class="svc-title">
+              <span class="highlight">04 / MOBILE APP<br />DEVELOPMENT</span>
+            </h3>
+            <p class="svc-tagline">
+              High-performance iOS & Android applications engineered for
+              eCommerce conversion.
+            </p>
+            <p class="svc-desc">
+              We design and build native-quality mobile experiences that feel
+              fast, look beautiful, and drive measurable results. From
+              onboarding flows to push notifications and offline mode — every
+              detail is crafted to keep your users engaged and coming back.
+            </p>
+          </div>
+        </div>
+        <div class="svc-visual" style="background: #c5cbd6">
+          <div class="laptop-wrap">
+            <div class="laptop-shell">
+              <div class="laptop-screen">
+                <div
+                  class="screen-ui"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      #18181b 0%,
+                      #27272a 50%,
+                      #09090b 100%
+                    );
+                  "
+                >
+                  <div class="ui-topbar">
+                    <div class="ui-dot" style="background: #ff5f57"></div>
+                    <div class="ui-dot" style="background: #ffbd2e"></div>
+                    <div class="ui-dot" style="background: #28c840"></div>
+                    <div class="ui-topbar-text"></div>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      gap: 8px;
+                      flex: 1;
+                      margin-top: 8px;
+                      justify-content: center;
+                      align-items: flex-start;
+                    "
+                  >
+                    <!-- Phone mockup inside laptop -->
+                    <div
+                      style="
+                        width: 38%;
+                        background: #1c1c1e;
+                        border-radius: 18px;
+                        border: 2px solid #3a3a3c;
+                        padding: 10px 8px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                      "
+                    >
+                      <div
+                        style="
+                          height: 6px;
+                          width: 30%;
+                          background: rgba(255, 255, 255, 0.4);
+                          border-radius: 3px;
+                          margin: 0 auto;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          height: 36px;
+                          background: linear-gradient(
+                            135deg,
+                            rgba(37, 99, 235, 0.4),
+                            rgba(6, 182, 212, 0.3)
+                          );
+                          border-radius: 8px;
+                          margin-top: 4px;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          height: 5px;
+                          background: rgba(255, 255, 255, 0.15);
+                          border-radius: 3px;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          height: 5px;
+                          width: 75%;
+                          background: rgba(255, 255, 255, 0.1);
+                          border-radius: 3px;
+                        "
+                      ></div>
+                      <div style="display: flex; gap: 4px; margin-top: 4px">
+                        <div
+                          style="
+                            flex: 1;
+                            height: 22px;
+                            background: rgba(255, 255, 255, 0.08);
+                            border-radius: 5px;
+                          "
+                        ></div>
+                        <div
+                          style="
+                            flex: 1;
+                            height: 22px;
+                            background: rgba(255, 255, 255, 0.08);
+                            border-radius: 5px;
+                          "
+                        ></div>
+                      </div>
+                      <div
+                        style="
+                          height: 14px;
+                          background: rgba(37, 99, 235, 0.5);
+                          border-radius: 5px;
+                          margin-top: 4px;
+                        "
+                      ></div>
+                    </div>
+                    <div
+                      style="
+                        width: 38%;
+                        background: #1c1c1e;
+                        border-radius: 18px;
+                        border: 2px solid #3a3a3c;
+                        padding: 10px 8px;
+                        margin-top: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                      "
+                    >
+                      <div
+                        style="
+                          height: 6px;
+                          width: 30%;
+                          background: rgba(255, 255, 255, 0.4);
+                          border-radius: 3px;
+                          margin: 0 auto;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          height: 36px;
+                          background: linear-gradient(
+                            135deg,
+                            rgba(139, 92, 246, 0.4),
+                            rgba(236, 72, 153, 0.3)
+                          );
+                          border-radius: 8px;
+                          margin-top: 4px;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          height: 5px;
+                          background: rgba(255, 255, 255, 0.15);
+                          border-radius: 3px;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          height: 5px;
+                          width: 75%;
+                          background: rgba(255, 255, 255, 0.1);
+                          border-radius: 3px;
+                        "
+                      ></div>
+                      <div style="display: flex; gap: 4px; margin-top: 4px">
+                        <div
+                          style="
+                            flex: 1;
+                            height: 22px;
+                            background: rgba(255, 255, 255, 0.08);
+                            border-radius: 5px;
+                          "
+                        ></div>
+                        <div
+                          style="
+                            flex: 1;
+                            height: 22px;
+                            background: rgba(255, 255, 255, 0.08);
+                            border-radius: 5px;
+                          "
+                        ></div>
+                      </div>
+                      <div
+                        style="
+                          height: 14px;
+                          background: rgba(139, 92, 246, 0.5);
+                          border-radius: 5px;
+                          margin-top: 4px;
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="laptop-base"></div>
+            <div class="laptop-foot"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ============================================
        METHODOLOGY
@@ -502,9 +899,9 @@
       <div class="container">
         <!-- Header -->
         <div class="ws-method__header text-center">
-          <h2 class="ws-method__title">Wusul Methodology</h2>
-          <p class="ws-method__sub">
-            Your digital roadmap… from the spark of an idea to the peak of
+          <h2 class="ws-method__title" data-aos="fade-up">Wusul Methodology</h2>
+          <p class="ws-method__sub" data-aos="fade-up">
+            Your digital roadmap... from the spark of an idea to the peak of
             digital success.
           </p>
         </div>
@@ -512,24 +909,11 @@
         <!-- Grid -->
         <div class="ws-method__grid">
           <!-- Card 01 -->
-          <div class="ws-mwrap">
+          <div class="ws-mwrap" data-aos="fade-up" data-aos-delay="100">
             <span class="ws-mnum">01</span>
             <div class="ws-mcard">
               <div class="ws-micon">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .6 2.2 1.5 3.1.7.7 1.3 1.5 1.5 2.5"
-                  />
-                  <path d="M9 18h6" />
-                  <path d="M10 22h4" />
-                </svg>
+                <img src="assets/icons/Methodology1.png" />
               </div>
               <h5 class="ws-mcard__title">Vision Discovery</h5>
               <p class="ws-mcard__body">
@@ -550,22 +934,11 @@
           </div>
 
           <!-- Card 02 -->
-          <div class="ws-mwrap">
+          <div class="ws-mwrap" data-aos="fade-up" data-aos-delay="200">
             <span class="ws-mnum">02</span>
             <div class="ws-mcard">
               <div class="ws-micon">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="6" cy="6" r="3" />
-                  <circle cx="18" cy="18" r="3" />
-                  <path d="M20 4L4 20" />
-                </svg>
+                <img src="assets/icons/Methodology2.png" />
               </div>
               <h5 class="ws-mcard__title">Strategic Roadmap</h5>
               <p class="ws-mcard__body">
@@ -585,22 +958,11 @@
           </div>
 
           <!-- Card 03 — no arrow -->
-          <div class="ws-mwrap">
+          <div class="ws-mwrap" data-aos="fade-up" data-aos-delay="300">
             <span class="ws-mnum">03</span>
             <div class="ws-mcard">
               <div class="ws-micon">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <rect x="3" y="3" width="18" height="18" rx="2" />
-                  <line x1="3" y1="9" x2="21" y2="9" />
-                  <line x1="9" y1="21" x2="9" y2="9" />
-                </svg>
+                <img src="assets/icons/Methodology3.png" />
               </div>
               <h5 class="ws-mcard__title">UX/UI Design</h5>
               <p class="ws-mcard__body">
@@ -611,21 +973,11 @@
           </div>
 
           <!-- Card 04 -->
-          <div class="ws-mwrap">
+          <div class="ws-mwrap" data-aos="fade-up" data-aos-delay="100">
             <span class="ws-mnum">04</span>
             <div class="ws-mcard">
               <div class="ws-micon">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="16 18 22 12 16 6" />
-                  <polyline points="8 6 2 12 8 18" />
-                </svg>
+                <img src="assets/icons/Methodology4.png" />
               </div>
               <h5 class="ws-mcard__title">Solution Building</h5>
               <p class="ws-mcard__body">
@@ -645,21 +997,11 @@
           </div>
 
           <!-- Card 05 -->
-          <div class="ws-mwrap">
+          <div class="ws-mwrap" data-aos="fade-up" data-aos-delay="200">
             <span class="ws-mnum">05</span>
             <div class="ws-mcard">
               <div class="ws-micon">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                  <path d="M9 11l2 2 4-4" />
-                </svg>
+                <img src="assets/icons/Methodology5.png" />
               </div>
               <h5 class="ws-mcard__title">Quality Standards</h5>
               <p class="ws-mcard__body">
@@ -679,25 +1021,11 @@
           </div>
 
           <!-- Card 06 — no arrow -->
-          <div class="ws-mwrap">
+          <div class="ws-mwrap" data-aos="fade-up" data-aos-delay="300">
             <span class="ws-mnum">06</span>
             <div class="ws-mcard">
               <div class="ws-micon">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    d="M4.5 16.5c-1.5 1.26-2.5 3.19-2.5 5.5h20c0-2.31-1-4.24-2.5-5.5"
-                  />
-                  <path
-                    d="M12 2C7.5 2 4 4.5 4 8.5c0 .76.1 1.48.3 2.15L8 16h8l3.7-5.35c.2-.67.3-1.39.3-2.15C20 4.5 16.5 2 12 2z"
-                  />
-                </svg>
+                <img src="assets/icons/Methodology6.png" />
               </div>
               <h5 class="ws-mcard__title">The Launch</h5>
               <p class="ws-mcard__body">
@@ -711,293 +1039,384 @@
       </div>
     </section>
     <!-- /METHODOLOGY -->
-       <!-- ============================================
+    <!-- ============================================
        ABOUT US 
   ============================================= -->
-  <section class="ws-about" id="about">
-    <div class="container">
-      <div class="ws-about__card">
-
-        <!-- Left: Text -->
-        <div class="ws-about__left">
-          <h2 class="ws-about__title">About Us</h2>
-          <p class="ws-about__desc">
-            At Wusul, we are a dedicated team crafting innovative systems
-            that drive your business toward sustainable growth and peak success.
-          </p>
-        </div>
-
-        <!-- Right: 2x2 grid -->
-        <div class="ws-about__grid">
-
-          <div class="ws-acard">
-            <div class="ws-acard__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                <path d="M9 11l2 2 4-4"/>
-              </svg>
-            </div>
-            <div class="ws-acard__body">
-              <h6 class="ws-acard__title">High Quality</h6>
-              <p class="ws-acard__desc">Highest quality standards in every step.</p>
-            </div>
-          </div>
-
-          <div class="ws-acard">
-            <div class="ws-acard__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .6 2.2 1.5 3.1.7.7 1.3 1.5 1.5 2.5"/>
-                <path d="M9 18h6"/><path d="M10 22h4"/>
-              </svg>
-            </div>
-            <div class="ws-acard__body">
-              <h6 class="ws-acard__title">Smart Solutions</h6>
-              <p class="ws-acard__desc">Tailored innovative solutions to achieve goals.</p>
-            </div>
-          </div>
-
-          <div class="ws-acard">
-            <div class="ws-acard__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                <circle cx="9" cy="7" r="4"/>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-              </svg>
-            </div>
-            <div class="ws-acard__body">
-              <h6 class="ws-acard__title">Commitment</h6>
-              <p class="ws-acard__desc">On-time professional project delivery.</p>
-            </div>
-          </div>
-
-          <div class="ws-acard">
-            <div class="ws-acard__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="18" height="18" rx="2"/>
-                <line x1="3" y1="9" x2="21" y2="9"/>
-                <line x1="9" y1="21" x2="9" y2="9"/>
-              </svg>
-            </div>
-            <div class="ws-acard__body">
-              <h6 class="ws-acard__title">User Experience</h6>
-              <p class="ws-acard__desc">Seamless designs keeping users at heart.</p>
-            </div>
-          </div>
-
-        </div>
-        <!-- /grid -->
-
-      </div>
-    </div>
-  </section>
-  <!-- /ABOUT US -->
-  <!-- ============================================
-       TECH STACK 
-  ============================================= -->
-  <section class="ws-tech" id="tech">
-    <div class="container">
-
-      <!-- Header -->
-      <div class="ws-tech__header text-center">
-        <span class="ws-tech__badge">⚙ Tech Stack</span>
-        <h2 class="ws-tech__title">Powered by Industry–Leading Technologies</h2>
-        <p class="ws-tech__sub">
-          We utilize cutting-edge technologies to build fast, secure, and scalable digital products.
-        </p>
-      </div>
-
-    </div>
-
-    <div class="ws-marquee ws-marquee--left">
-      <div class="ws-marquee__track">
-        <div class="ws-ticon"><img src="assets/icons/notion.svg"    alt="Notion"    /></div>
-        <div class="ws-ticon"><img src="assets/icons/github.svg"    alt="GitHub"    /></div>
-        <div class="ws-ticon"><img src="assets/icons/slack.svg"     alt="Slack"     /></div>
-        <div class="ws-ticon"><img src="assets/icons/wordpress.svg" alt="WordPress" /></div>
-        <div class="ws-ticon"><img src="assets/icons/adobe.svg"     alt="Adobe"     /></div>
-        <div class="ws-ticon"><img src="assets/icons/figma.svg"     alt="Figma"     /></div>
-        <div class="ws-ticon"><img src="assets/icons/react.svg"     alt="React"     /></div>
-        <div class="ws-ticon"><img src="assets/icons/azure.svg"     alt="Azure"     /></div>
-        <div class="ws-ticon"><img src="assets/icons/microsoft.svg" alt="Microsoft" /></div>
-        <div class="ws-ticon"><img src="assets/icons/nextjs.svg"    alt="Next.js"   /></div>
-        <!-- نسخة ثانية للـ loop -->
-        <div class="ws-ticon"><img src="assets/icons/notion.svg"    alt="Notion"    /></div>
-        <div class="ws-ticon"><img src="assets/icons/github.svg"    alt="GitHub"    /></div>
-        <div class="ws-ticon"><img src="assets/icons/slack.svg"     alt="Slack"     /></div>
-        <div class="ws-ticon"><img src="assets/icons/wordpress.svg" alt="WordPress" /></div>
-        <div class="ws-ticon"><img src="assets/icons/adobe.svg"     alt="Adobe"     /></div>
-        <div class="ws-ticon"><img src="assets/icons/figma.svg"     alt="Figma"     /></div>
-        <div class="ws-ticon"><img src="assets/icons/react.svg"     alt="React"     /></div>
-        <div class="ws-ticon"><img src="assets/icons/azure.svg"     alt="Azure"     /></div>
-        <div class="ws-ticon"><img src="assets/icons/microsoft.svg" alt="Microsoft" /></div>
-        <div class="ws-ticon"><img src="assets/icons/nextjs.svg"    alt="Next.js"   /></div>
-      </div>
-    </div>
-
-    <div class="ws-marquee ws-marquee--right">
-      <div class="ws-marquee__track">
-        <div class="ws-ticon"><img src="assets/icons/notion.svg"    alt="Notion"    /></div>
-        <div class="ws-ticon"><img src="assets/icons/github.svg"    alt="GitHub"    /></div>
-        <div class="ws-ticon"><img src="assets/icons/slack.svg"     alt="Slack"     /></div>
-        <div class="ws-ticon"><img src="assets/icons/wordpress.svg" alt="WordPress" /></div>
-        <div class="ws-ticon"><img src="assets/icons/adobe.svg"     alt="Adobe"     /></div>
-        <div class="ws-ticon"><img src="assets/icons/figma.svg"     alt="Figma"     /></div>
-        <div class="ws-ticon"><img src="assets/icons/react.svg"     alt="React"     /></div>
-        <div class="ws-ticon"><img src="assets/icons/azure.svg"     alt="Azure"     /></div>
-        <div class="ws-ticon"><img src="assets/icons/microsoft.svg" alt="Microsoft" /></div>
-        <div class="ws-ticon"><img src="assets/icons/nextjs.svg"    alt="Next.js"   /></div>
-        <!-- نسخة ثانية للـ loop -->
-        <div class="ws-ticon"><img src="assets/icons/notion.svg"    alt="Notion"    /></div>
-        <div class="ws-ticon"><img src="assets/icons/github.svg"    alt="GitHub"    /></div>
-        <div class="ws-ticon"><img src="assets/icons/slack.svg"     alt="Slack"     /></div>
-        <div class="ws-ticon"><img src="assets/icons/wordpress.svg" alt="WordPress" /></div>
-        <div class="ws-ticon"><img src="assets/icons/adobe.svg"     alt="Adobe"     /></div>
-        <div class="ws-ticon"><img src="assets/icons/figma.svg"     alt="Figma"     /></div>
-        <div class="ws-ticon"><img src="assets/icons/react.svg"     alt="React"     /></div>
-        <div class="ws-ticon"><img src="assets/icons/azure.svg"     alt="Azure"     /></div>
-        <div class="ws-ticon"><img src="assets/icons/microsoft.svg" alt="Microsoft" /></div>
-        <div class="ws-ticon"><img src="assets/icons/nextjs.svg"    alt="Next.js"   /></div>
-      </div>
-    </div>
-
-  </section>
-  <!-- /TECH STACK -->
-  <!-- ============================================
-       CTA —
-  ============================================= -->
-  <section class="ws-cta" id="contact">
-    <div class="container">
-      <div class="ws-cta__card">
-
-        <!-- Grid pattern overlay -->
-        <div class="ws-cta__grid-overlay"></div>
-
-        <!-- Content -->
-        <div class="ws-cta__content">
-          <div class="ws-cta__left">
-            <h2 class="ws-cta__title">
-              Ready to transform your<br />digital presence?
-            </h2>
-            <p class="ws-cta__desc">
-              Let's collaborate to build a high-converting<br />
-              product that scales your business.
+    <section class="ws-about" id="about">
+      <div class="container">
+        <div class="ws-about__card">
+          <!-- Left: Text -->
+          <div class="ws-about__left" data-aos="fade-right">
+            <h2 class="ws-about__title">About Us</h2>
+            <p class="ws-about__desc">
+              At Wusul, we are a dedicated team crafting innovative systems that
+              drive your business toward sustainable growth and peak success.
             </p>
           </div>
 
-          <div class="ws-cta__right">
-            <a href="#" class="btn ws-cta__btn">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4.5 16.5c-1.5 1.26-2.5 3.19-2.5 5.5h20c0-2.31-1-4.24-2.5-5.5"/>
-                <path d="M12 2C7.5 2 4 4.5 4 8.5c0 .76.1 1.48.3 2.15L8 16h8l3.7-5.35c.2-.67.3-1.39.3-2.15C20 4.5 16.5 2 12 2z"/>
-              </svg>
-              Get Started Now
-            </a>
+          <!-- Right: 2x2 grid -->
+          <div class="ws-about__grid" data-aos="fade-left">
+            <div class="ws-acard">
+              <div class="ws-acard__icon">
+                <img src="assets/icons/about1.png" />
+              </div>
+              <div class="ws-acard__body">
+                <h6 class="ws-acard__title">High Quality</h6>
+                <p class="ws-acard__desc">
+                  Highest quality standards in every step.
+                </p>
+              </div>
+            </div>
+
+            <div class="ws-acard">
+              <div class="ws-acard__icon">
+                <img src="assets/icons/about2.png" />
+              </div>
+              <div class="ws-acard__body">
+                <h6 class="ws-acard__title">Smart Solutions</h6>
+                <p class="ws-acard__desc">
+                  Tailored innovative solutions to achieve goals.
+                </p>
+              </div>
+            </div>
+
+            <div class="ws-acard">
+              <div class="ws-acard__icon">
+                <img src="assets/icons/about3.png" />
+              </div>
+              <div class="ws-acard__body">
+                <h6 class="ws-acard__title">Commitment</h6>
+                <p class="ws-acard__desc">
+                  On-time professional project delivery.
+                </p>
+              </div>
+            </div>
+
+            <div class="ws-acard">
+              <div class="ws-acard__icon">
+                <img src="assets/icons/about4.png" />
+              </div>
+              <div class="ws-acard__body">
+                <h6 class="ws-acard__title">User Experience</h6>
+                <p class="ws-acard__desc">
+                  Seamless designs keeping users at heart.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- /grid -->
+        </div>
+      </div>
+    </section>
+    <!-- /ABOUT US -->
+    <!-- ============================================
+       TECH STACK 
+  ============================================= -->
+    <section class="ws-tech" id="tech">
+      <div class="container">
+        <!-- Header -->
+        <div class="ws-tech__header text-center" data-aos="fade-up">
+          <span class="ws-tech__badge">⚙ Tech Stack</span>
+          <h2 class="ws-tech__title">
+            Powered by Industry–Leading Technologies
+          </h2>
+          <p class="ws-tech__sub">
+            We utilize cutting-edge technologies to build fast, secure, and
+            scalable digital products.
+          </p>
+        </div>
+      </div>
+
+      <div class="ws-marquee ws-marquee--left">
+        <div class="ws-marquee__track">
+          <div class="ws-ticon">
+            <img src="assets/icons/notion.svg" alt="Notion" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/github.svg" alt="GitHub" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/slack.svg" alt="Slack" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/wordpress.svg" alt="WordPress" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/adobe.svg" alt="Adobe" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/figma.svg" alt="Figma" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/react.svg" alt="React" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/azure.svg" alt="Azure" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/microsoft.svg" alt="Microsoft" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/nextjs.svg" alt="Next.js" />
+          </div>
+          <!-- نسخة ثانية للـ loop -->
+          <div class="ws-ticon">
+            <img src="assets/icons/notion.svg" alt="Notion" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/github.svg" alt="GitHub" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/slack.svg" alt="Slack" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/wordpress.svg" alt="WordPress" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/adobe.svg" alt="Adobe" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/figma.svg" alt="Figma" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/react.svg" alt="React" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/azure.svg" alt="Azure" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/microsoft.svg" alt="Microsoft" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/nextjs.svg" alt="Next.js" />
           </div>
         </div>
-
       </div>
-    </div>
-  </section>
-  <!-- /CTA -->
-  <!-- ============================================
+
+      <div class="ws-marquee ws-marquee--right">
+        <div class="ws-marquee__track">
+          <div class="ws-ticon">
+            <img src="assets/icons/notion.svg" alt="Notion" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/github.svg" alt="GitHub" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/slack.svg" alt="Slack" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/wordpress.svg" alt="WordPress" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/adobe.svg" alt="Adobe" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/figma.svg" alt="Figma" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/react.svg" alt="React" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/azure.svg" alt="Azure" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/microsoft.svg" alt="Microsoft" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/nextjs.svg" alt="Next.js" />
+          </div>
+          <!-- نسخة ثانية للـ loop -->
+          <div class="ws-ticon">
+            <img src="assets/icons/notion.svg" alt="Notion" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/github.svg" alt="GitHub" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/slack.svg" alt="Slack" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/wordpress.svg" alt="WordPress" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/adobe.svg" alt="Adobe" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/figma.svg" alt="Figma" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/react.svg" alt="React" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/azure.svg" alt="Azure" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/microsoft.svg" alt="Microsoft" />
+          </div>
+          <div class="ws-ticon">
+            <img src="assets/icons/nextjs.svg" alt="Next.js" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /TECH STACK -->
+    <!-- ============================================
+       CTA —
+  ============================================= -->
+    <section class="ws-cta" id="contact">
+      <div class="container">
+        <div class="ws-cta__card">
+          <!-- Grid pattern overlay -->
+          <div class="ws-cta__grid-overlay"></div>
+
+          <!-- Content -->
+          <div class="ws-cta__content">
+            <div class="ws-cta__left" data-aos="fade-right">
+              <h2 class="ws-cta__title">
+                Ready to transform your<br />digital presence?
+              </h2>
+              <p class="ws-cta__desc">
+                Let's collaborate to build a high-converting<br />
+                product that scales your business.
+              </p>
+            </div>
+
+            <div
+              class="ws-cta__right"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
+              <a href="#" class="btn ws-cta__btn">
+                <img src="assets/icons/start.png" />
+                Get Started Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /CTA -->
+    <!-- ============================================
        FOOTER 
   ============================================= -->
-  <footer class="ws-footer">
-    <div class="container">
-
-      <!-- Top row -->
-      <div class="ws-footer__top">
-
-        <!-- Brand -->
-        <div class="ws-footer__brand">
-          <a href="#" class="ws-footer__logo">
-            <img src="assets/images/logo.png" alt="Wusul" height="32" />
-          </a>
-          <p class="ws-footer__tagline">
-            Engineering the next generation of digital products through
-            strategic UI/UX and high-performance solutions.
-          </p>
-        </div>
-
-        <!-- Services -->
-        <div class="ws-footer__col">
-          <h6 class="ws-footer__heading">SERVICES</h6>
-          <ul class="ws-footer__links">
-            <li><a href="#">UI/UX Design</a></li>
-            <li><a href="#">Product Strategy</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Digital Redesign</a></li>
-          </ul>
-        </div>
-
-        <!-- Company -->
-        <div class="ws-footer__col">
-          <h6 class="ws-footer__heading">COMPANY</h6>
-          <ul class="ws-footer__links">
-            <li><a href="#about">About Wusul</a></li>
-            <li><a href="#process">Our Process</a></li>
-            <li><a href="#">FAQ's</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-          </ul>
-        </div>
-
-        <!-- Connect -->
-        <div class="ws-footer__col">
-          <h6 class="ws-footer__heading">Connect</h6>
-          <ul class="ws-footer__links">
-            <li><a href="tel:+972597705019">+972597705019</a></li>
-            <li><a href="mailto:hello@wosool.tech">hello@wosool.tech</a></li>
-          </ul>
-        </div>
-
-      </div>
-
-      <!-- Middle: Design Impact box + Social -->
-      <div class="ws-footer__middle">
-
-        <div class="ws-footer__impact">
-          <p>
-            <span class="ws-footer__impact-label">Design Impact.</span>
-            We don't just create visuals, we build business assets.
-            Every pixel is calculated to drive your brand's growth
-            and maximize your digital ROI.
-          </p>
-        </div>
-
-        <div class="ws-footer__social">
-          <span class="ws-footer__social-label">Connect</span>
-          <div class="ws-footer__social-icons">
-            <a href="#" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+    <footer class="ws-footer" data-aos="fade-up">
+      <div class="container">
+        <!-- Top row -->
+        <div class="ws-footer__top">
+          <!-- Brand -->
+          <div class="ws-footer__brand" >
+            <a href="#" class="ws-footer__logo">
+              <img src="assets/images/logo.png" alt="Wusul" height="32" />
             </a>
-            <a href="#" aria-label="Twitter">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-            </a>
-            <a href="#" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </a>
+            <p class="ws-footer__tagline">
+              Engineering the next generation of digital products through
+              strategic UI/UX and high-performance solutions.
+            </p>
+          </div>
+
+          <!-- Services -->
+          <div class="ws-footer__col" data-aos="fade-up" data-aos-delay="100">
+            <h6 class="ws-footer__heading">SERVICES</h6>
+            <ul class="ws-footer__links">
+              <li><a href="#">UI/UX Design</a></li>
+              <li><a href="#">Product Strategy</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Digital Redesign</a></li>
+            </ul>
+          </div>
+
+          <!-- Company -->
+          <div class="ws-footer__col" data-aos="fade-up" data-aos-delay="200">
+            <h6 class="ws-footer__heading">COMPANY</h6>
+            <ul class="ws-footer__links">
+              <li><a href="#about">About Wusul</a></li>
+              <li><a href="#process">Our Process</a></li>
+              <li><a href="#">FAQ's</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- Connect -->
+          <div class="ws-footer__col" data-aos="fade-up" data-aos-delay="300">
+            <h6 class="ws-footer__heading">Connect</h6>
+            <ul class="ws-footer__links">
+              <li><a href="tel:+972597705019">+972597705019</a></li>
+              <li><a href="mailto:hello@wosool.tech">hello@wosool.tech</a></li>
+            </ul>
           </div>
         </div>
 
+        <!-- Middle: Design Impact box + Social -->
+        <div class="ws-footer__middle">
+          <div class="ws-footer__impact">
+            <p>
+              <span class="ws-footer__impact-label">Design Impact.</span>
+              We don't just create visuals, we build business assets. Every
+              pixel is calculated to drive your brand's growth and maximize your
+              digital ROI.
+            </p>
+          </div>
+
+          <div class="ws-footer__social">
+            <span class="ws-footer__social-label">Connect</span>
+            <div class="ws-footer__social-icons">
+              <a href="#" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </a>
+              <a href="#" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                  />
+                </svg>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="ws-footer__divider"></div>
+
+        <!-- Bottom -->
+        <div class="ws-footer__bottom">
+          <p>© 2026 Wosool. Crafted with passion for visionaries.</p>
+        </div>
       </div>
-
-      <!-- Divider -->
-      <div class="ws-footer__divider"></div>
-
-      <!-- Bottom -->
-      <div class="ws-footer__bottom">
-        <p>© 2026 Wosool. Crafted with passion for visionaries.</p>
-      </div>
-
-    </div>
-  </footer>
-  <!-- /FOOTER -->
+    </footer>
+    <!-- /FOOTER -->
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 600,
+        once: true,
+        offset: 80,
+      });
+    </script>
   </body>
 </html>

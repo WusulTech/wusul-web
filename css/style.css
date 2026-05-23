@@ -610,7 +610,9 @@ body {
   padding: 5rem 0 4rem;
   overflow: hidden;
 }
-
+.ws-tech .container {
+  overflow: hidden;
+}
 /* Header */
 .ws-tech__header {
   margin-bottom: 3rem;
@@ -648,7 +650,9 @@ body {
 
 /* ── Marquee wrapper ──────────────────────────── */
 .ws-marquee {
-  width: 100%;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
   overflow: hidden;
   margin-bottom: 1rem;
   /* fade على الحافتين */

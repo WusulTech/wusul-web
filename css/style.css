@@ -180,10 +180,10 @@ body {
   font-weight: 590;
   
 }
-.wws-hero-h1{
+.ws-hero-h1{
   font-family: var(--ws-font-display);
-  font-weight: 800;
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: bold;
+  font-size: clamp(1.5rem, 3vw, 1.5rem);
   color: var(--ws-text-dark);
   letter-spacing: -0.02em;
   margin-bottom: 0.75rem;
@@ -825,7 +825,7 @@ text-align: center;
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
-  background-size: 34px 34px;
+  background-size: 15px 15px;
   pointer-events: none;
 }
 
@@ -1342,8 +1342,8 @@ text-align: center;
 
  /* ── Testimonials ── */
   .testimonials {
-    background: #F8FAFC;
-    margin-top: 60px;
+    background: var(--ws-bg-page);
+        margin-top: 60px;
     padding: 60px 0 80px;
   }
   .testimonials-header {
@@ -1355,7 +1355,7 @@ text-align: center;
     color: var(--ws-primary);
     font-family: var(--ws-font-display);
     font-weight: 800;
-    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-size: clamp(1.5rem,2vw, 2rem);
     line-height: 1.05;
   }
   .testimonials-subtext {

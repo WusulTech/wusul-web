@@ -20,7 +20,6 @@
     { passive: true },
   );
 })();
-
 /* Smooth scroll */
 document.querySelectorAll('a[href^="#"]').forEach(function (link) {
   link.addEventListener("click", function (e) {

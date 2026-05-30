@@ -1132,19 +1132,34 @@ text-align: center;
   .testimonial-card-top {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 12px;
+    justify-content: flex-start;
+    gap: 8px;
     padding: 24px;
   }
   .testimonial-stars {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .testimonial-stars .star {
+    font-size: 1.5rem;
+    line-height: 1;
     color: #FBBF24;
-    font-size: 0.98rem;
-    letter-spacing: 0.04em;
+  }
+  .testimonial-stars .star::before {
+    content: "★";
+    display: block;
+  }
+  .testimonial-stars .star.empty {
+    color: #CBD5E1;
   }
   .testimonial-score {
     color: #0F172A;
     font-weight: 700;
     font-size: 0.95rem;
+    white-space: nowrap;
+    padding-left: 10px;
+    
   }
   .testimonial-card-copy {
     padding: 0 24px 18px;
@@ -1158,9 +1173,10 @@ text-align: center;
     gap: 14px;
     background: var(--ws-primary);
     padding: 24px;
-    border-bottom-left-radius: 32px;
-    border-bottom-right-radius: 95px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 30px;
     margin-top: auto;
+    border-radius: 30px;
   }
   .testimonial-avatar {
     width: 56px;

@@ -77,6 +77,18 @@
   position: relative;
   overflow: hidden;
   margin-bottom: 1rem;
+    width: 441px;
+    height: 285px;
+    border-radius: 26px;
+}
+@media (max-width: 991px) {
+  .ws-contact__visual {
+    width: 100%;
+    height: 285px;
+    margin-bottom: 1.5rem;
+    border-radius: 50px;
+
+  }
 }
 
 /* Bubbles animation */

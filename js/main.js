@@ -56,3 +56,17 @@ document.querySelectorAll('a[href^="#"]').forEach(function (link) {
     });
   });
 })();
+  // Start marquees after all resources (images) have loaded,
+      // and set animation duration based on track width for smooth motion.
+      window.addEventListener('load', function () {
+        document.querySelectorAll('.ws-marquee__track').forEach(function (track) {
+          // Set animation duration proportional to content width (px per second)
+          var pxPerSec = 140; // increase to speed up
+          var duration = Math.max(12, Math.round(track.scrollWidth / pxPerSec));
+          track.style.animationDuration = duration + 's';
+        });
+
+        document.querySelectorAll('.ws-marquee').forEach(function (marquee) {
+          marquee.classList.add('loaded');
+        });
+      });

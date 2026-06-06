@@ -161,15 +161,13 @@
         <!-- Trusted By -->
         <div class="ws-trusted text-center" data-aos="fade-up">
           <p class="ws-trusted-title">Trusted by ambitious eCommerce teams</p>
-          <img
-            src="assets/images/trusted-logos.png"
+          <img src="assets/images/trusted-logos.png"
             alt="Trusted by our partners"
             class="ws-trusted-img"
             onerror="
               this.style.display = 'none';
-              this.nextElementSibling.style.display = 'flex';
-            "
-          />
+              this.nextElementSibling.style.display = 'flex';"/>
+
           <div class="ws-trusted-placeholder">
             <span><img src="assets/images/logo.png" /></span>
             <span><img src="assets/images/logo.png" /></span>
@@ -681,8 +679,7 @@
             Powered by Industry–Leading Technologies
           </h2>
           <p class="ws-tech__sub">
-            We utilize cutting-edge technologies to build fast, secure, and
-            scalable digital products.
+            We utilize cutting-edge technologies to build fast, secure, and scalable digital products.
           </p>
         </div>
       </div>
@@ -745,7 +742,7 @@
             <img src="assets/icons/onedrive.png" alt="Azure" />
           </div>
           <div class="ws-ticon">
-            <img src="assets/icons/microsoft.svg" alt="Microsoft" />
+            <img src="assets/icons/microsoft.png" alt="Microsoft" />
           </div>
           <div class="ws-ticon">
             <img src="assets/icons/nextjs2.png" alt="Next.js" />
@@ -1030,7 +1027,7 @@
                 digital presence?
             </h2>
             <p class="ws-cta__desc">
-             Let’s collaborate to build a high-converting product that scales your business.
+             Let’s collaborate to build a high converting product that scales your business.
             </p>
           </div>
 
@@ -1058,7 +1055,7 @@
         <!-- Brand -->
         <div class="ws-footer__brand">
           <a href="#" class="ws-footer__logo">
-            <img src="assets/images/logo.png" alt="Wusul" height="32" />
+            <img src="assets/images/Frame 7.png" alt="Wusul" height="32" />
           </a>
           <p class="ws-footer__tagline">
             Engineering the next generation of digital products through
@@ -1147,20 +1144,6 @@
     <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
-      // Start marquees after all resources (images) have loaded,
-      // and set animation duration based on track width for smooth motion.
-      window.addEventListener('load', function () {
-        document.querySelectorAll('.ws-marquee__track').forEach(function (track) {
-          // Set animation duration proportional to content width (px per second)
-          var pxPerSec = 140; // increase to speed up
-          var duration = Math.max(12, Math.round(track.scrollWidth / pxPerSec));
-          track.style.animationDuration = duration + 's';
-        });
-
-        document.querySelectorAll('.ws-marquee').forEach(function (marquee) {
-          marquee.classList.add('loaded');
-        });
-      });
 
       AOS.init({
         duration: 600,
@@ -1170,3 +1153,6 @@
     </script>
   </body>
 </html>
+
+
+

@@ -10,6 +10,8 @@
 }
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -20,6 +22,7 @@ body {
   margin: 0;
   /* padding-top لأن الـ navbar فيكسد */
   padding-top: 10px;
+  overflow-x: hidden;
 }
 
 /* ══════════════════════════════════════════════
@@ -106,24 +109,7 @@ body {
 /* ══════════════════════════════════════════════
    BUTTONS
    ══════════════════════════════════════════════ */
-.ws-btn-primary {
-  background: var(--ws-primary);
-  color: #fff !important;
-  border: 2px solid var(--ws-primary);
-  border-radius: 15px;
-  font-family: var(--ws-font-display);
-  font-weight: 600;
-  font-size: 0.9rem;
-  padding: 0.55rem 1.3rem;
-  box-shadow: var(--ws-shadow-btn);
-  transition: var(--ws-ease);
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 220px;
-  height: 48px;
-}
+   
 .ws-btn-primary:hover {
   background: var(--ws-primary-hover);
   border-color: var(--ws-primary-hover);
@@ -149,8 +135,9 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 10px;
-  min-width: 220px;
   height: 48px;
+  width: 300px;
+
 }
 .ws-btn-outline:hover {
   border-color: var(--ws-primary);
@@ -220,14 +207,47 @@ body {
 .ws-hero-btns {
   display: flex;
   justify-content: center;
-  gap: 0.75rem;
+  gap: 1rem;
   flex-wrap: wrap;
   margin-bottom: 2.5rem;
 }
 .ws-hero-btns .btn  {
 text-align: center;
 }
-
+.ws-btn-primary {
+    background: var(--ws-primary);
+    color: #fff !important;
+    border-radius: 15px;
+    font-family: var(--ws-font-display);
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.55rem 1.3rem;
+    box-shadow: var(--ws-shadow-btn);
+    transition: var(--ws-ease);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 300px;
+}
+.ws-book-btn{
+     background: var(--ws-primary);
+    color: #fff !important;
+    border-radius: 15px;
+    font-family: var(--ws-font-display);
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.55rem 1.3rem;
+    box-shadow: var(--ws-shadow-btn);
+    transition: var(--ws-ease);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 220px;
+}
 /* ══════════════════════════════════════════════
    FIX 6 — STAT CARDS: blue background
    ══════════════════════════════════════════════ */
@@ -309,8 +329,7 @@ text-align: center;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
-  padding: 1rem 0;
+  gap: 1rem;
 }
 
 .ws-trusted-placeholder span {
@@ -534,19 +553,21 @@ text-align: center;
 
 .ws-cta {
   background: var(--ws-bg-page);
-  padding: 5rem 0;
+  padding: 4rem 0;
+
 }
 
 /* الكارت الرئيسي */
 .ws-cta__card {
   border-radius: 28px;
-  background: linear-gradient(90deg, #2173ff 0%, #0d4fdb 45%, #0c1d58 100%);
+  background: linear-gradient(90deg, #0CA7F2 0%, #0CA7F2 45%, #16184C 100%);
   padding: 3.5rem 3.5rem;
   position: relative;
   overflow: hidden;
-  min-height: 260px;
+  min-height: 450px;
   display: flex;
   align-items: center;
+  
 }
 
 /* Grid pattern على اليمين */
@@ -559,7 +580,7 @@ text-align: center;
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
-  background-size: 15px 15px;
+  background-size: 12px 12px;
   pointer-events: none;
 }
 
@@ -581,7 +602,7 @@ text-align: center;
 
 .ws-cta__title {
   font-family: var(--ws-font-display);
-  font-weight: 800;
+  font-weight: bold;
   font-size: clamp(2.2rem, 4vw, 3.5rem);
   color: #08111e;
   letter-spacing: -0.03em;
@@ -594,7 +615,7 @@ text-align: center;
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.92);
   line-height: 1.75;
-  max-width: 520px;
+  max-width: 290px;
   margin-bottom: 0;
 }
 
@@ -1548,22 +1569,29 @@ text-align: center;
     black 92%,
     transparent 100%
   );
+  position: relative;
 }
 
 /* الـ track يحمل الأيقونات كلها في سطر */
 .ws-marquee__track {
   display: flex;
-  width: max-content;
+  width: 100%;
   will-change: transform;
+  animation-play-state: paused;
+}
+
+.ws-marquee.loaded .ws-marquee__track {
+  animation-play-state: running;
+  width: max-content;
 }
 
 /* Row 1 — يتحرك يسار */
-.ws-marquee--left .ws-marquee__track {
+.ws-marquee.loaded .ws-marquee--left .ws-marquee__track {
   animation: ws-scroll-left 28s linear infinite;
 }
 
 /* Row 2 — يتحرك يمين */
-.ws-marquee--right .ws-marquee__track {
+.ws-marquee.loaded .ws-marquee--right .ws-marquee__track {
   animation: ws-scroll-right 28s linear infinite;
 }
 

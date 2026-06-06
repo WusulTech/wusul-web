@@ -21,7 +21,9 @@ body {
   /* padding-top لأن الـ navbar فيكسد */
   padding-top: 10px;
 }
-
+body {
+  overflow-x: hidden;
+}
 /* ══════════════════════════════════════════════
    FIX 1 — NAVBAR: floating + rounded corners
    ══════════════════════════════════════════════ */
@@ -242,7 +244,8 @@ body {
   text-align: center;
   transition: var(--ws-ease);
   border: 1px solid #bdd0f9;
-  height: 200px;
+  min-height: 160px;
+
   width: 100%;
 }
 .ws-stat:hover {
@@ -842,7 +845,7 @@ body {
 
 /* ── Services – split layout ── */
 .services-section {
-  padding: 4rem 0;
+  padding: 0.5rem 0;
 }
 .services-section .section-title {
   font-family: var(--ff-head);
@@ -1682,14 +1685,14 @@ body {
 }
 
 .services-section {
-  padding: 5rem 0rem;
+  padding: 1rem 0rem;
   margin: 0 auto;
 }
 
 /* ─── Header ─── */
 .services-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 .services-header .label {
   font-family: var(--ws-font-display);
@@ -2232,5 +2235,66 @@ body {
 @media (max-width: 640px) {
   .testimonials-grid {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .ws-mcard__number {
+    font-size: 4rem;
+  }
+}
+/* ================================================
+   SCROLL TO TOP BUTTON
+   ================================================ */
+.ws-scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 46px;
+  height: 46px;
+  background: var(--ws-primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--ws-ease);
+  z-index: 999;
+  box-shadow: var(--ws-shadow-btn);
+  backdrop-filter: blur(4px);
+}
+
+.ws-scroll-top:hover {
+  background: var(--ws-primary-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+}
+
+.ws-scroll-top svg {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+}
+
+.ws-scroll-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 576px) {
+  .ws-scroll-top {
+    bottom: 1.2rem;
+    right: 1.2rem;
+    width: 42px;
+    height: 42px;
+  }
+  .ws-scroll-top svg {
+    width: 18px;
+    height: 18px;
   }
 }

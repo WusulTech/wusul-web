@@ -430,6 +430,7 @@ text-align: center;
   grid-template-columns: repeat(3, 282px);
   justify-content: center;
   gap: 24px 177px;
+  overflow: visible; /* allow arrows to extend outside columns */
 }
 
 /* Card wrapper — يحتوي الرقم + الكارت + السهم */
@@ -438,6 +439,7 @@ text-align: center;
   min-height: 262px;
   max-width: 282px;
   width: 100%;
+  overflow: visible; /* prevent clipping of absolutely positioned arrows */
 }
 
 /* الرقم الكبير في الخلفية */
@@ -468,11 +470,26 @@ text-align: center;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
   text-align: left;
   height: 100%;
+  overflow: hidden;
   min-height: 262px;
   justify-content: center;
   display: flex;
   flex-direction: column;
   transition: var(--ws-ease);
+}
+
+..ws-mcard::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 36px;
+  height: 48px;
+  transform: translateY(-50%);
+  background: #ffffff;
+  z-index: 3;
+  pointer-events: none;
+  border-radius: 24px 0 0 24px;
 }
 
 .ws-mcard:hover {
@@ -518,24 +535,22 @@ text-align: center;
 /* السهم بين الكارتات */
 .ws-marrow {
   position: absolute;
-  top: 50%;
-  left: 100%;
-  width: 190px;
-  height: 33.6px;
-  z-index: 3;
-  transform: translate(-5px, -50%);
+  top: 62%;
+  /* start deeper inside the left card and extend across the gap */
+  left: calc(100% - 40px);
+  width: calc(177px + 80px);
+  height: auto; /* keep SVG aspect ratio so heads/dots aren't clipped */
+  z-index: 1;
+  transform: translate(-40px, -50%);
   display: block;
   pointer-events: none;
-  object-fit: fill;
+  clip-path: inset(0 0 0 34px);
 }
 
 /* Responsive */
 @media (max-width: 1024px) {
   .ws-method__grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-  .ws-marrow {
-    display: none;
   }
 }
 
@@ -549,6 +564,9 @@ text-align: center;
   }
   .ws-mnum {
     font-size: 5rem;
+  }
+  .ws-marrow {
+    display: none;
   }
 }
 

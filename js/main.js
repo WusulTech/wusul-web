@@ -71,26 +71,38 @@ document.querySelectorAll('a[href^="#"]').forEach(function (link) {
         });
       });
 
-/* Trust strip — count-up animation */
+/* Stats band — count-up + scroll trigger */
 (function () {
-  var nums = document.querySelectorAll(".ws-trust-strip__num[data-count]");
+  var band = document.querySelector(".ws-stats-band");
+  if (!band) return;
+
+  var nums = band.querySelectorAll(".ws-stats-band__num[data-count]");
   if (!nums.length) return;
 
-  function animateCount(el) {
+  function animateCount(el, delay) {
     var target = parseInt(el.getAttribute("data-count"), 10);
     if (isNaN(target)) return;
 
     var duration = 1400;
-    var start = performance.now();
 
-    function tick(now) {
-      var progress = Math.min((now - start) / duration, 1);
-      var eased = 1 - Math.pow(1 - progress, 3);
-      el.textContent = "+" + Math.round(target * eased);
-      if (progress < 1) requestAnimationFrame(tick);
-    }
+    setTimeout(function () {
+      var start = performance.now();
 
-    requestAnimationFrame(tick);
+      function tick(now) {
+        var progress = Math.min((now - start) / duration, 1);
+        var eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = "+" + Math.round(target * eased);
+        if (progress < 1) requestAnimationFrame(tick);
+      }
+
+      requestAnimationFrame(tick);
+    }, delay);
+  }
+
+  function startCounters() {
+    nums.forEach(function (el, index) {
+      animateCount(el, index * 120);
+    });
   }
 
   if ("IntersectionObserver" in window) {
@@ -98,16 +110,14 @@ document.querySelectorAll('a[href^="#"]').forEach(function (link) {
       function (entries, obs) {
         entries.forEach(function (entry) {
           if (!entry.isIntersecting) return;
-          animateCount(entry.target);
-          obs.unobserve(entry.target);
+          startCounters();
+          obs.unobserve(band);
         });
       },
-      { threshold: 0.4 },
+      { threshold: 0.35 },
     );
-    nums.forEach(function (el) {
-      observer.observe(el);
-    });
+    observer.observe(band);
   } else {
-    nums.forEach(animateCount);
+    startCounters();
   }
 })();

@@ -404,36 +404,40 @@ text-align: center;
 
 /* Header */
 .ws-method__header {
-  margin-bottom: 3rem;
+  margin-bottom: 24px;
 }
 
 .ws-method__title {
   font-family: var(--ws-font-display);
   font-weight: 800;
-  font-size: clamp(2.6rem, 4vw, 3.8rem);
+  font-size: 36px;
+  line-height: 60px;
   color: var(--ws-primary);
   letter-spacing: -0.03em;
-  margin-bottom: 0.75rem;
+  margin-bottom: 16px;
 }
 
 .ws-method__sub {
   font-family: var(--ws-font-body);
-  font-size: 1rem;
+  font-size: 22px;
+  line-height: 34px;
   color: var(--ws-text-body);
-  line-height: 1.6;
 }
 
 /* Grid — 3 columns على desktop */
 .ws-method__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px 40px;
+  grid-template-columns: repeat(3, 282px);
+  justify-content: center;
+  gap: 24px 177px;
 }
 
 /* Card wrapper — يحتوي الرقم + الكارت + السهم */
 .ws-mwrap {
   position: relative;
-  min-height: 240px;
+  min-height: 262px;
+  max-width: 282px;
+  width: 100%;
 }
 
 /* الرقم الكبير في الخلفية */
@@ -460,11 +464,11 @@ text-align: center;
   background: #ffffff;
   clip-path: url(#ws-card-shape);
   -webkit-clip-path: url(#ws-card-shape);
-  padding: 32px 28px;
+  padding: 24px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
   text-align: left;
   height: 100%;
-  min-height: 240px;
+  min-height: 262px;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -478,13 +482,13 @@ text-align: center;
 
 /* الأيقونة */
 .ws-micon {
-  width: 44px;
-  height: 44px;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--ws-primary);
-  margin-bottom: 1rem;
+  margin-bottom: 38px;
 }
 
 .ws-micon svg {
@@ -496,30 +500,33 @@ text-align: center;
 .ws-mcard__title {
   font-family: var(--ws-font-display);
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 22px;
+  line-height: 34px;
   color: var(--ws-text-dark);
-  margin-bottom: 0.6rem;
+  margin-bottom: 4px;
 }
 
 /* نص الكارت */
 .ws-mcard__body {
   font-family: var(--ws-font-body);
-  font-size: 0.875rem;
+  font-size: 16px;
   color: var(--ws-text-body);
-  line-height: 1.65;
+  line-height: 22px;
   margin-bottom: 0;
 }
 
 /* السهم بين الكارتات */
 .ws-marrow {
   position: absolute;
-  top: 33%;
+  top: 50%;
   left: 100%;
-  width: 40px;
-  height: 40px;
+  width: 190px;
+  height: 33.6px;
   z-index: 3;
-  transform: translateX(-6px);
-  color: #2563eb;
+  transform: translate(-5px, -50%);
+  display: block;
+  pointer-events: none;
+  object-fit: fill;
 }
 
 /* Responsive */

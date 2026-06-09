@@ -70,3 +70,44 @@ document.querySelectorAll('a[href^="#"]').forEach(function (link) {
           marquee.classList.add('loaded');
         });
       });
+
+/* Trust strip — count-up animation */
+(function () {
+  var nums = document.querySelectorAll(".ws-trust-strip__num[data-count]");
+  if (!nums.length) return;
+
+  function animateCount(el) {
+    var target = parseInt(el.getAttribute("data-count"), 10);
+    if (isNaN(target)) return;
+
+    var duration = 1400;
+    var start = performance.now();
+
+    function tick(now) {
+      var progress = Math.min((now - start) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = "+" + Math.round(target * eased);
+      if (progress < 1) requestAnimationFrame(tick);
+    }
+
+    requestAnimationFrame(tick);
+  }
+
+  if ("IntersectionObserver" in window) {
+    var observer = new IntersectionObserver(
+      function (entries, obs) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          animateCount(entry.target);
+          obs.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.4 },
+    );
+    nums.forEach(function (el) {
+      observer.observe(el);
+    });
+  } else {
+    nums.forEach(animateCount);
+  }
+})();

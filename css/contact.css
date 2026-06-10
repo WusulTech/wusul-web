@@ -1,45 +1,46 @@
 /* ================================================
-   contact.css — صفحة التواصل
-   ملف CSS منفصل خاص بصفحة contact.html بس
+   contact.css — Contact page styles
    ================================================ */
 
 .ws-contact {
-  background: var(--ws-bg-page);
-  padding: 4rem 0 0rem;
+  padding: 4rem 0 0;
   overflow-x: hidden;
+  background: var(--ws-bg-page);
 }
 
-/* Header */
+/* ── Header ───────────────────────────────────── */
+
 .ws-contact__header {
   margin-bottom: 3rem;
 }
 
 .ws-contact__title {
+  margin-bottom: 0.75rem;
   font-family: var(--ws-font-display);
   font-weight: 800;
   font-size: clamp(1.8rem, 3vw, 2.4rem);
-  color: var(--ws-primary);
   letter-spacing: -0.02em;
-  margin-bottom: 0.75rem;
+  color: var(--ws-primary);
 }
 
 .ws-contact__sub {
-  font-family: var(--ws-font-body);
-  font-size: 0.95rem;
-  color: var(--ws-text-body);
   max-width: 580px;
   margin: 0 auto;
+  font-family: var(--ws-font-body);
+  font-size: 0.95rem;
   line-height: 1.7;
+  color: var(--ws-text-body);
 }
 
+/* ── Map ──────────────────────────────────────── */
+
 .ws-contact__map {
-  margin: 2.2rem auto 0;
   max-width: 1000px;
+  margin: 2.2rem auto 0;
   border-radius: 24px;
   overflow: hidden;
-  box-shadow: 0 30px 70px rgba(9, 22, 46, 0.12);
   background-color: var(--ws-bg-page);
-
+  box-shadow: 0 30px 70px rgba(9, 22, 46, 0.12);
 }
 
 .ws-contact__map img {
@@ -47,19 +48,18 @@
   width: 100%;
   height: 100%;
   background-color: var(--ws-bg-page);
-
-
 }
 
 @media (min-width: 992px) {
   .ws-contact__map {
     width: 100vw;
-    margin-left: calc(-50vw + 50%);
     max-width: none;
+    margin-left: calc(-50vw + 50%);
   }
 }
 
-/* Body layout */
+/* ── Body layout ──────────────────────────────── */
+
 .ws-contact__body {
   display: grid;
   grid-template-columns: 1fr 1.4fr;
@@ -67,31 +67,26 @@
   align-items: start;
 }
 
-/* ── Left side ────────────────────────────────── */
+/* ── Left column ──────────────────────────────── */
 
-/* Blue visual card with bubbles */
 .ws-contact__visual {
-  background: linear-gradient(135deg, #0CA7F2 0%, #16184C 100%);
-  border-radius: 18px;
-  height: 200px;
   position: relative;
-  overflow: hidden;
+  width: 441px;
+  height: 285px;
   margin-bottom: 1rem;
-    width: 441px;
-    height: 285px;
-    border-radius: 26px;
+  border-radius: 26px;
+  overflow: hidden;
+  background: var(--ws-gradient-contact-visual);
 }
+
 @media (max-width: 991px) {
   .ws-contact__visual {
     width: 100%;
-    height: 285px;
     margin-bottom: 1.5rem;
     border-radius: 50px;
-
   }
 }
 
-/* Bubbles animation */
 .ws-bubbles {
   position: absolute;
   inset: 0;
@@ -103,8 +98,8 @@
 .ws-bubble {
   position: absolute;
   border-radius: 50%;
-  border: 1.5px solid rgba(255,255,255,0.35);
-  background: rgba(255,255,255,0.06);
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.06);
   animation: ws-float 4s ease-in-out infinite;
 }
 
@@ -122,98 +117,97 @@
   50%       { transform: translateY(-10px); }
 }
 
-/* Info cards */
 .ws-contact__info {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  background: #ffffff;
-  border-radius: 16px;
   padding: 1.5rem;
   border: 1px solid var(--ws-border);
+  border-radius: 16px;
+  background: var(--ws-bg-white);
 }
 
 .ws-info-card {
-  background: #ffffff;
-  border: 1px solid var(--ws-border);
-  border-radius: 12px;
-  padding: 0.85rem 1rem;
   display: flex;
   align-items: center;
   gap: 0.85rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--ws-border);
+  border-radius: 12px;
+  background: var(--ws-surface-muted);
   transition: var(--ws-ease);
 }
 
 .ws-info-card:hover {
-  border-color: #0CA7F2;
-  box-shadow: 0 4px 14px rgba(37,99,235,0.08);
+  border-color: var(--ws-brand-cyan);
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.08);
 }
 
 .ws-info-card__icon {
-  flex-shrink: 0;
-  width: 38px;
-  height: 38px;
-  background: var(--ws-primary-light);
-  border-radius: 9px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--ws-primary);
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
+  background: var(--ws-primary-light);
   font-size: 1.1rem;
+  color: var(--ws-primary);
 }
 
 .ws-info-card__title {
+  margin-bottom: 0.1rem;
   font-family: var(--ws-font-display);
   font-weight: 700;
   font-size: 0.875rem;
   color: var(--ws-text-dark);
-  margin-bottom: 0.1rem;
 }
 
 .ws-info-card__val {
+  margin-bottom: 0;
   font-family: var(--ws-font-body);
   font-size: 0.8rem;
   color: var(--ws-text-muted);
-  margin-bottom: 0;
 }
 
-/* ── Right side — Form ────────────────────────── */
+/* ── Form ─────────────────────────────────────── */
+
 .ws-contact__right {
-  background: #ffffff;
+  padding: 2rem;
   border: 1px solid var(--ws-border);
   border-radius: 18px;
-  padding: 2rem 2rem;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+  background: var(--ws-bg-white);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05);
 }
 
 .ws-form__title {
+  margin-bottom: 0.4rem;
   font-family: var(--ws-font-display);
   font-weight: 700;
   font-size: 1.1rem;
   color: var(--ws-text-dark);
-  margin-bottom: 0.4rem;
 }
 
 .ws-form__sub {
+  margin-bottom: 1.5rem;
   font-family: var(--ws-font-body);
   font-size: 0.82rem;
-  color: var(--ws-text-muted);
   line-height: 1.6;
-  margin-bottom: 1.5rem;
+  color: var(--ws-text-muted);
 }
 
-/* Fields */
 .ws-field {
   margin-bottom: 1rem;
 }
 
 .ws-field__label {
+  display: block;
+  margin-bottom: 0.35rem;
   font-family: var(--ws-font-body);
   font-size: 0.82rem;
   font-weight: 500;
   color: var(--ws-text-dark);
-  margin-bottom: 0.35rem;
-  display: block;
 }
 
 .ws-field__label span {
@@ -222,10 +216,10 @@
 
 .ws-field__input {
   width: 100%;
-  background: var(--ws-bg-page);
+  padding: 0.6rem 0.9rem;
   border: 1px solid var(--ws-border);
   border-radius: 8px;
-  padding: 0.6rem 0.9rem;
+  background: var(--ws-bg-page);
   font-family: var(--ws-font-body);
   font-size: 0.82rem;
   color: var(--ws-text-dark);
@@ -239,43 +233,43 @@
 
 .ws-field__input:focus {
   border-color: var(--ws-primary);
-  background: #ffffff;
-  box-shadow: 0 0 0 3px rgba(37,99,235,0.08);
+  background: var(--ws-bg-white);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
 }
 
 .ws-field__textarea {
-  resize: vertical;
   min-height: 100px;
+  resize: vertical;
 }
 
-/* Submit button */
 .ws-form__btn {
-  width: 100%;
-  background: var(--ws-primary);
-  color: #ffffff;
-  border: none;
-  border-radius: 10px;
-  font-family: var(--ws-font-display);
-  font-weight: 600;
-  font-size: 0.95rem;
-  padding: 0.85rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.85rem;
+  border: none;
+  border-radius: 10px;
+  background: var(--ws-primary);
+  box-shadow: var(--ws-shadow-btn);
+  font-family: var(--ws-font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #ffffff;
   cursor: pointer;
   transition: var(--ws-ease);
-  box-shadow: var(--ws-shadow-btn);
-  margin-top: 0.5rem;
 }
 
 .ws-form__btn:hover {
   background: var(--ws-primary-hover);
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(37,99,235,0.40);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.40);
 }
 
 /* ── Responsive ───────────────────────────────── */
+
 @media (max-width: 991px) {
   .ws-contact__body {
     grid-template-columns: 1fr;
@@ -283,8 +277,11 @@
 }
 
 @media (max-width: 576px) {
-  .ws-contact { padding: 3rem 0; }
-  .ws-contact__right { padding: 1.5rem; }
+  .ws-contact {
+    padding: 3rem 0;
+  }
+
+  .ws-contact__right {
+    padding: 1.5rem;
+  }
 }
-
-

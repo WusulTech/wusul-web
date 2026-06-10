@@ -1,0 +1,82 @@
+/* Component — navbar & nav links */
+
+/* ══════════════════════════════════════════════
+   FIX 1 — NAVBAR: floating + rounded corners
+   ══════════════════════════════════════════════ */
+.ws-navbar {
+  background: var(--ws-bg-white);
+  top: 1rem;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(16px);
+  margin: 0 auto 1rem;
+  border-radius: 20px;
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  box-shadow: 0 18px 70px rgba(15, 23, 42, 0.08);
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+  transition: var(--ws-ease);
+  max-width: 1240px;
+}
+.ws-navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: left;
+  gap: 0.4rem;
+}
+
+@media (min-width: 992px) {
+  .navbar-collapse {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+}
+/* FIX 3 — Logo image */
+.ws-logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
+/* ══════════════════════════════════════════════
+   FIX 2 — NAV LINKS: gradient color on hover
+   ══════════════════════════════════════════════ */
+.ws-nav-link {
+  font-family: var(--ws-font-body);
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--ws-text-nav) !important;
+  padding: 0.4rem 0.9rem !important;
+  position: relative;
+  transition: var(--ws-ease);
+}
+
+.ws-nav-link:hover,
+.ws-nav-link.active {
+  background: linear-gradient(90deg, #0ca7f2 0%, #16184c 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+  font-weight: 500;
+}
+
+.ws-nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0.9rem;
+  right: 0.9rem;
+  height: 2px;
+  background: linear-gradient(90deg, #2563eb 0%, #7c3aed 100%);
+  border-radius: 2px;
+}

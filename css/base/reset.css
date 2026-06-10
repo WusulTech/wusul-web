@@ -1,0 +1,24 @@
+/* Base — reset & global defaults */
+
+/* ── Base ─────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--ws-font-body);
+  color: var(--ws-text-body);
+  background: var(--ws-bg-page);
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  /* padding-top لأن الـ navbar فيكسد */
+  padding-top: 10px;
+  overflow-x: hidden;
+}

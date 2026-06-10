@@ -9,6 +9,12 @@
   --ws-primary-hover:  #1D4ED8;   /* Darker on hover                   */
   --ws-primary-light:  #EFF6FF;   /* Light blue bg — badge, tints      */
   --ws-primary-border: #BFDBFE;   /* Badge border color                */
+  --ws-brand-cyan:     #0CA7F2;   /* CTA gradient start                */
+  --ws-brand-navy:     #16184C;   /* CTA gradient end                  */
+  --ws-cta-accent:     #4F88FF;   /* CTA button                        */
+  --ws-cta-accent-hover: #629CFF;
+  --ws-cta-title:      #08111E;   /* CTA headline                      */
+  --ws-surface-muted:  #EDEBEB;   /* Contact info cards                */
 
   /* ── Text Colors ───────────────────────────── */
   --ws-text-dark:      #111827;   /* H1 headlines                      */
@@ -34,6 +40,12 @@
   --ws-radius-pill:    999px;
   --ws-radius-btn:     8px;
   --ws-radius-card:    14px;
+  --ws-radius-cta:     28px;
+  --ws-radius-cta-btn: 16px;
+
+  /* ── Gradients ──────────────────────────────── */
+  --ws-gradient-brand: linear-gradient(90deg, var(--ws-brand-cyan) 0%, var(--ws-brand-navy) 100%);
+  --ws-gradient-contact-visual: linear-gradient(135deg, var(--ws-brand-cyan) 0%, var(--ws-brand-navy) 100%);
 
   /* ── Transitions ────────────────────────────── */
   --ws-ease:           all 0.22s ease;

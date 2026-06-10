@@ -1,0 +1,158 @@
+/* Section — Wusul methodology */
+
+.ws-method {
+  background: var(--ws-bg-page);
+  padding: 5rem 0 4.5rem;
+}
+
+/* Header */
+.ws-method__header {
+  margin-bottom: 24px;
+}
+
+.ws-method__title {
+  font-family: var(--ws-font-display);
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 60px;
+  color: var(--ws-primary);
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+}
+
+.ws-method__sub {
+  font-family: var(--ws-font-body);
+  font-size: 22px;
+  line-height: 34px;
+  color: var(--ws-text-body);
+}
+
+/* Grid — 3 columns على desktop */
+.ws-method__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 282px);
+  justify-content: center;
+  gap: 24px 177px;
+  overflow: visible; /* allow arrows to extend outside columns */
+}
+
+/* Card wrapper — يحتوي الرقم + الكارت + السهم */
+.ws-mwrap {
+  position: relative;
+  min-height: 262px;
+  max-width: 282px;
+  width: 100%;
+  overflow: visible; /* prevent clipping of absolutely positioned arrows */
+}
+
+/* الرقم الكبير في الخلفية */
+.ws-mnum {
+  position: absolute;
+  top: -15px;
+  right: 14px;
+  font-family: var(--ws-font-display);
+  font-style: italic;
+  font-weight: 800;
+  font-size: 7rem;
+  color: #5c6b73;
+  opacity: 0.35;
+  z-index: 1;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* الكارت — بالشكل المقطوع */
+.ws-mcard {
+  position: relative;
+  z-index: 2;
+  background: #ffffff;
+  clip-path: url(#ws-card-shape);
+  -webkit-clip-path: url(#ws-card-shape);
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  height: 100%;
+  overflow: hidden;
+  min-height: 262px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  transition: var(--ws-ease);
+}
+
+.ws-mcard:hover {
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.1);
+  transform: translateY(-3px);
+}
+
+/* الأيقونة */
+.ws-micon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ws-primary);
+  margin-bottom: 38px;
+}
+
+.ws-micon svg {
+  width: 34px;
+  height: 34px;
+}
+
+/* عنوان الكارت */
+.ws-mcard__title {
+  font-family: var(--ws-font-display);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 34px;
+  color: var(--ws-text-dark);
+  margin-bottom: 4px;
+}
+
+/* نص الكارت */
+.ws-mcard__body {
+  font-family: var(--ws-font-body);
+  font-size: 16px;
+  color: var(--ws-text-body);
+  line-height: 22px;
+  margin-bottom: 0;
+}
+
+/* السهم بين الكارتات — يملأ الفجوة 177px من حافة لحافة */
+.ws-marrow {
+  position: absolute;
+  top: 62%;
+  left: 100%;
+  width: 177px;
+  height: auto;
+  z-index: 3;
+  transform: translateY(-50%);
+  display: block;
+  pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .ws-method__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .ws-method__grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .ws-method {
+    padding: 3rem 0 2.5rem;
+  }
+  .ws-mnum {
+    font-size: 5rem;
+  }
+  .ws-marrow {
+    display: none;
+  }
+}

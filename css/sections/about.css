@@ -1,0 +1,126 @@
+/* Section — about us */
+
+.ws-about {
+  background: var(--ws-bg-page);
+  padding: 5rem 0;
+}
+
+/* الكارت الرئيسي بالـ gradient */
+.ws-about__card {
+  background: linear-gradient(110deg, #16184c 0%, #0ca7f2 100%);
+  border-radius: 24px;
+  padding: 3rem 3rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* اليسار — النص */
+.ws-about__left {
+  flex: 0 0 280px;
+  max-width: 280px;
+  height: 200px;
+}
+
+.ws-about__title {
+  font-family: var(--ws-font-display);
+  font-weight: 800;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  color: #2563eb;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.ws-about__desc {
+  font-family: var(--ws-font-body);
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* اليمين — الـ grid */
+.ws-about__grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+/* الكارتات الداخلية */
+.ws-acard {
+  background: #111827;
+  border-radius: 14px;
+  padding: 1.2rem 1.1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  transition: var(--ws-ease);
+  backdrop-filter: blur(4px);
+}
+
+.ws-acard:hover {
+  background: rgba(13, 17, 40, 0.9);
+  transform: translateY(-2px);
+}
+
+/* الأيقونة */
+.ws-acard__icon {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d3dffb;
+  color: #000;
+  border-radius: 50px;
+}
+
+.ws-acard__icon svg {
+  width: 26px;
+  height: 26px;
+}
+
+/* النص */
+.ws-acard__body {
+  flex: 1;
+}
+
+.ws-acard__title {
+  font-family: var(--ws-font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+}
+
+.ws-acard__desc {
+  font-family: var(--ws-font-body);
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .ws-about__card {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1.5rem;
+  }
+  .ws-about__left {
+    flex: unset;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .ws-about__grid {
+    grid-template-columns: 1fr;
+  }
+  .ws-about {
+    padding: 3rem 0;
+  }
+}

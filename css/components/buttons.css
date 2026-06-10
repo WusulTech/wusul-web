@@ -1,0 +1,40 @@
+/* Component — buttons */
+
+/* ══════════════════════════════════════════════
+   BUTTONS
+   ══════════════════════════════════════════════ */
+   
+.ws-btn-primary:hover {
+  background: var(--ws-primary-hover);
+  border-color: var(--ws-primary-hover);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+  transform: translateY(-1px);
+  color: #fff !important;
+  text-decoration: none;
+}
+
+/* FIX 5 — Our Services: transparent */
+.ws-btn-outline {
+  background: transparent;
+  color: var(--ws-text-dark) !important;
+  border: 1.5px solid #d1d5db;
+  border-radius: 15px;
+  font-family: var(--ws-font-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.55rem 1.3rem;
+  transition: var(--ws-ease);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  height: 48px;
+  width: 300px;
+
+}
+.ws-btn-outline:hover {
+  color: var(--ws-primary) !important;
+  transform: translateY(-1px);
+  text-decoration: none;
+}

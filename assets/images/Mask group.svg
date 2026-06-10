@@ -1,0 +1,86 @@
+<svg width="864" height="576" viewBox="0 0 864 576" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_247_431" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-1" y="-94" width="1730" height="1730">
+<path d="M0 -93V1635" stroke="#B3B3B3"/>
+<path d="M21.8732 -93V1635" stroke="#B3B3B3"/>
+<path d="M43.7468 -93V1635" stroke="#B3B3B3"/>
+<path d="M65.62 -93V1635" stroke="#B3B3B3"/>
+<path d="M87.4937 -93V1635" stroke="#B3B3B3"/>
+<path d="M109.367 -93V1635" stroke="#B3B3B3"/>
+<path d="M131.24 -93V1635" stroke="#B3B3B3"/>
+<path d="M153.114 -93V1635" stroke="#B3B3B3"/>
+<path d="M174.987 -93V1635" stroke="#B3B3B3"/>
+<path d="M196.861 -93V1635" stroke="#B3B3B3"/>
+<path d="M218.734 -93V1635" stroke="#B3B3B3"/>
+<path d="M240.607 -93V1635" stroke="#B3B3B3"/>
+<path d="M262.481 -93V1635" stroke="#B3B3B3"/>
+<path d="M284.354 -93V1635" stroke="#B3B3B3"/>
+<path d="M306.228 -93V1635" stroke="#B3B3B3"/>
+<path d="M328.101 -93V1635" stroke="#B3B3B3"/>
+<path d="M349.975 -93V1635" stroke="#B3B3B3"/>
+<path d="M371.848 -93V1635" stroke="#B3B3B3"/>
+<path d="M393.722 -93V1635" stroke="#B3B3B3"/>
+<path d="M415.595 -93V1635" stroke="#B3B3B3"/>
+<path d="M437.469 -93V1635" stroke="#B3B3B3"/>
+<path d="M459.342 -93V1635" stroke="#B3B3B3"/>
+<path d="M481.215 -93V1635" stroke="#B3B3B3"/>
+<path d="M503.089 -93V1635" stroke="#B3B3B3"/>
+<path d="M524.962 -93V1635" stroke="#B3B3B3"/>
+<path d="M546.835 -93V1635" stroke="#B3B3B3"/>
+<path d="M568.708 -93V1635" stroke="#B3B3B3"/>
+<path d="M590.582 -93V1635" stroke="#B3B3B3"/>
+<path d="M612.456 -93V1635" stroke="#B3B3B3"/>
+<path d="M634.329 -93V1635" stroke="#B3B3B3"/>
+<path d="M656.202 -93V1635" stroke="#B3B3B3"/>
+<path d="M678.076 -93V1635" stroke="#B3B3B3"/>
+<path d="M699.949 -93V1635" stroke="#B3B3B3"/>
+<path d="M721.823 -93V1635" stroke="#B3B3B3"/>
+<path d="M743.696 -93V1635" stroke="#B3B3B3"/>
+<path d="M765.57 -93V1635" stroke="#B3B3B3"/>
+<path d="M787.443 -93V1635" stroke="#B3B3B3"/>
+<path d="M809.317 -93V1635" stroke="#B3B3B3"/>
+<path d="M831.19 -93V1635" stroke="#B3B3B3"/>
+<path d="M853.063 -93V1635" stroke="#B3B3B3"/>
+<path d="M0 16.3667H1728" stroke="#B3B3B3"/>
+<path d="M0 38.2407H1728" stroke="#B3B3B3"/>
+<path d="M0 60.1143H1728" stroke="#B3B3B3"/>
+<path d="M0 81.9873H1728" stroke="#B3B3B3"/>
+<path d="M0 103.86H1728" stroke="#B3B3B3"/>
+<path d="M0 125.734H1728" stroke="#B3B3B3"/>
+<path d="M0 147.608H1728" stroke="#B3B3B3"/>
+<path d="M0 169.481H1728" stroke="#B3B3B3"/>
+<path d="M0 191.354H1728" stroke="#B3B3B3"/>
+<path d="M0 213.228H1728" stroke="#B3B3B3"/>
+<path d="M0 235.102H1728" stroke="#B3B3B3"/>
+<path d="M0 256.975H1728" stroke="#B3B3B3"/>
+<path d="M0 278.848H1728" stroke="#B3B3B3"/>
+<path d="M0 300.722H1728" stroke="#B3B3B3"/>
+<path d="M0 322.595H1728" stroke="#B3B3B3"/>
+<path d="M0 344.469H1728" stroke="#B3B3B3"/>
+<path d="M0 366.342H1728" stroke="#B3B3B3"/>
+<path d="M0 388.216H1728" stroke="#B3B3B3"/>
+<path d="M0 410.089H1728" stroke="#B3B3B3"/>
+<path d="M0 431.962H1728" stroke="#B3B3B3"/>
+<path d="M0 453.836H1728" stroke="#B3B3B3"/>
+<path d="M0 475.709H1728" stroke="#B3B3B3"/>
+<path d="M0 497.582H1728" stroke="#B3B3B3"/>
+<path d="M0 519.455H1728" stroke="#B3B3B3"/>
+<path d="M0 541.329H1728" stroke="#B3B3B3"/>
+<path d="M0 563.202H1728" stroke="#B3B3B3"/>
+</mask>
+<g mask="url(#mask0_247_431)">
+<g filter="url(#filter0_f_247_431)">
+<circle cx="616" cy="310" r="310" fill="url(#paint0_linear_247_431)"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_247_431" x="56" y="-250" width="1120" height="1120" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur_247_431"/>
+</filter>
+<linearGradient id="paint0_linear_247_431" x1="616" y1="0" x2="616" y2="620" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0CA7F2"/>
+<stop offset="1" stop-color="#16184C"/>
+</linearGradient>
+</defs>
+</svg>

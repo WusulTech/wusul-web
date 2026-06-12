@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include "partials/head.njk" %}
+  </head>
+  <body>
+    {% if svgDefs %}{% include "partials/svg-defs.njk" %}{% endif %}
+    {% include "partials/navbar.njk" %}
+    {{ content | safe }}
+    {% include "partials/footer.njk" %}
+    {% include "partials/scripts.njk" %}
+  </body>
+</html>

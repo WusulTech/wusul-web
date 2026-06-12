@@ -4,6 +4,24 @@
 
 "use strict";
 
+/* AOS — scroll animations */
+if (typeof AOS !== "undefined") {
+  AOS.init({
+    duration: 600,
+    once: true,
+    offset: 80,
+  });
+}
+
+/* Marquee — duplicate icons for seamless loop */
+(function () {
+  document.querySelectorAll(".ws-marquee__track[data-marquee-clone]").forEach(function (track) {
+    Array.from(track.children).forEach(function (node) {
+      track.appendChild(node.cloneNode(true));
+    });
+  });
+})();
+
 /* Navbar shadow on scroll */
 (function () {
   const nav = document.getElementById("mainNav");

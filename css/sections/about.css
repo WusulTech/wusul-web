@@ -1,62 +1,58 @@
 /* Section — about us */
 
 .ws-about {
+  padding: clamp(3rem, 6vw, 5rem) 0;
   background: var(--ws-bg-page);
-  padding: 5rem 0;
 }
 
-/* الكارت الرئيسي بالـ gradient */
 .ws-about__card {
-  background: linear-gradient(110deg, #16184c 0%, #0ca7f2 100%);
-  border-radius: 24px;
-  padding: 3rem 3rem;
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  padding: clamp(1.75rem, 4vw, 3rem);
+  border-radius: clamp(1rem, 2.5vw, 1.5rem);
+  background: linear-gradient(110deg, #16184c 0%, #0ca7f2 100%);
 }
 
-/* اليسار — النص */
 .ws-about__left {
-  flex: 0 0 280px;
-  max-width: 280px;
-  height: 200px;
+  flex: 0 0 auto;
+  max-width: 17.5rem;
 }
 
 .ws-about__title {
+  margin: 0 0 1rem;
   font-family: var(--ws-font-display);
   font-weight: 800;
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
-  color: #2563eb;
+  font-size: clamp(1.5rem, 4vw, 2.4rem);
   letter-spacing: -0.02em;
-  margin-bottom: 1rem;
+  color: #2563eb;
 }
 
 .ws-about__desc {
+  margin: 0;
   font-family: var(--ws-font-body);
-  font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.8);
+  font-size: clamp(0.875rem, 2vw, 0.95rem);
   line-height: 1.7;
-  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.8);
 }
 
-/* اليمين — الـ grid */
 .ws-about__grid {
-  flex: 1;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  flex: 1;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
+  min-width: 0;
 }
 
-/* الكارتات الداخلية */
 .ws-acard {
-  background: #111827;
-  border-radius: 14px;
-  padding: 1.2rem 1.1rem;
   display: flex;
   align-items: flex-start;
   gap: 0.85rem;
-  transition: var(--ws-ease);
+  padding: clamp(1rem, 2.5vw, 1.2rem) clamp(0.9rem, 2vw, 1.1rem);
+  border-radius: 14px;
+  background: #111827;
   backdrop-filter: blur(4px);
+  transition: var(--ws-ease);
 }
 
 .ws-acard:hover {
@@ -64,63 +60,57 @@
   transform: translateY(-2px);
 }
 
-/* الأيقونة */
 .ws-acard__icon {
-  flex-shrink: 0;
-  width: 50px;
-  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+  width: clamp(2.5rem, 6vw, 3.125rem);
+  height: clamp(2.5rem, 6vw, 3.125rem);
+  border-radius: 50px;
   background: #d3dffb;
   color: #000;
-  border-radius: 50px;
 }
 
 .ws-acard__icon svg {
-  width: 26px;
-  height: 26px;
+  width: 1.625rem;
+  height: 1.625rem;
 }
 
-/* النص */
 .ws-acard__body {
   flex: 1;
+  min-width: 0;
 }
 
 .ws-acard__title {
+  margin: 0 0 0.25rem;
   font-family: var(--ws-font-display);
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: clamp(0.875rem, 2vw, 0.95rem);
   color: #ffffff;
-  margin-bottom: 0.25rem;
 }
 
 .ws-acard__desc {
+  margin: 0;
   font-family: var(--ws-font-body);
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.6);
+  font-size: clamp(0.75rem, 1.8vw, 0.8rem);
   line-height: 1.5;
-  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.6);
 }
 
-/* Responsive */
 @media (max-width: 991px) {
   .ws-about__card {
     flex-direction: column;
-    gap: 2rem;
-    padding: 2rem 1.5rem;
+    align-items: stretch;
   }
+
   .ws-about__left {
-    flex: unset;
     max-width: 100%;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .ws-about__grid {
     grid-template-columns: 1fr;
-  }
-  .ws-about {
-    padding: 3rem 0;
   }
 }

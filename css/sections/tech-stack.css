@@ -1,56 +1,55 @@
 /* Section — tech stack marquee */
 
 .ws-tech {
-  background: var(--ws-bg-page);
-  padding: 5rem 0 4rem;
+  padding: clamp(3rem, 6vw, 5rem) 0 clamp(2.5rem, 5vw, 4rem);
   overflow: hidden;
+  background: var(--ws-bg-page);
 }
+
 .ws-tech .container {
   overflow: hidden;
 }
-/* Header */
+
 .ws-tech__header {
-  margin-bottom: 3rem;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+  padding: 0 1rem;
 }
 
 .ws-tech__badge {
   display: inline-block;
-  background: var(--ws-primary-light);
-  border: 1px solid var(--ws-primary-border);
-  color: var(--ws-primary);
-  font-family: var(--ws-font-body);
-  font-size: 0.82rem;
-  border-radius: 999px;
-  padding: 0.3rem 1rem;
   margin-bottom: 1.1rem;
+  padding: 0.3rem 1rem;
+  border: 1px solid var(--ws-primary-border);
+  border-radius: 999px;
+  background: var(--ws-primary-light);
+  font-family: var(--ws-font-body);
+  font-size: clamp(0.75rem, 2vw, 0.82rem);
+  color: var(--ws-primary);
 }
 
 .ws-tech__title {
+  margin: 0 0 0.75rem;
   font-family: var(--ws-font-display);
   font-weight: 800;
-  font-size: clamp(1.5rem, 3vw, 2.1rem);
-  color: var(--ws-primary);
+  font-size: clamp(1.25rem, 3.5vw, 2.1rem);
   letter-spacing: -0.02em;
-  margin-bottom: 0.75rem;
+  color: var(--ws-primary);
 }
 
 .ws-tech__sub {
-  font-family: var(--ws-font-body);
-  font-size: 0.95rem;
-  color: var(--ws-text-body);
-  max-width: 520px;
+  max-width: 32.5rem;
   margin: 0 auto;
+  font-family: var(--ws-font-body);
+  font-size: clamp(0.875rem, 2.2vw, 0.95rem);
   line-height: 1.6;
+  color: var(--ws-text-body);
 }
 
-/* ── Marquee wrapper ──────────────────────────── */
 .ws-marquee {
-  max-width: 70%;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+  max-width: min(90%, 68.75rem);
+  margin: 0 auto 1rem;
   overflow: hidden;
-  margin-bottom: 1rem;
-  /* fade على الحافتين */
   -webkit-mask-image: linear-gradient(
     to right,
     transparent 0%,
@@ -65,10 +64,8 @@
     black 92%,
     transparent 100%
   );
-  position: relative;
 }
 
-/* الـ track يحمل الأيقونات كلها في سطر */
 .ws-marquee__track {
   display: flex;
   width: max-content;
@@ -80,22 +77,18 @@
   animation-play-state: running;
 }
 
-/* Row 1 — يتحرك يسار */
 .ws-marquee--left .ws-marquee__track {
   animation: ws-scroll-left 28s linear infinite;
 }
 
-/* Row 2 — يتحرك يمين */
 .ws-marquee--right .ws-marquee__track {
   animation: ws-scroll-right 28s linear infinite;
 }
 
-/* يوقف عند hover */
 .ws-marquee:hover .ws-marquee__track {
   animation-play-state: paused;
 }
 
-/* ── Keyframes ────────────────────────────────── */
 @keyframes ws-scroll-left {
   0% {
     transform: translateX(0);
@@ -114,19 +107,18 @@
   }
 }
 
-/* ── Icon card ────────────────────────────────── */
 .ws-ticon {
-  flex-shrink: 0;
-  width: 72px;
-  height: 72px;
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+  width: clamp(3.25rem, 8vw, 4.5rem);
+  height: clamp(3.25rem, 8vw, 4.5rem);
+  margin-right: clamp(0.75rem, 2vw, 1rem);
+  border-radius: clamp(0.75rem, 2vw, 1rem);
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
   transition: var(--ws-ease);
-  margin-right: 1rem;
 }
 
 .ws-ticon:hover {
@@ -135,26 +127,33 @@
 }
 
 .ws-ticon img {
-  width: 38px;
-  height: 38px;
+  width: clamp(1.75rem, 4.5vw, 2.375rem);
+  height: clamp(1.75rem, 4.5vw, 2.375rem);
   object-fit: contain;
 }
 
-/* Responsive */
+@media (max-width: 768px) {
+  .ws-marquee {
+    max-width: 100%;
+    padding: 0 0.5rem;
+  }
+}
+
 @media (max-width: 576px) {
-  .ws-ticon {
-    width: 58px;
-    height: 58px;
-    border-radius: 12px;
-  }
-  .ws-ticon img {
-    width: 30px;
-    height: 30px;
-  }
-  .ws-tech {
-    padding: 3rem 0 2.5rem;
-  }
-  .ws-tech__title{
-    font-size: 17px;
+  .ws-marquee {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 4%,
+      black 96%,
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 4%,
+      black 96%,
+      transparent 100%
+    );
   }
 }

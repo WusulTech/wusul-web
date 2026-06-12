@@ -1,0 +1,63 @@
+{% if isHome %}
+  {% set logoHref = "#" %}
+  {% set homeHref = "#hero" %}
+  {% set servicesHref = "#services" %}
+  {% set processHref = "#process" %}
+  {% set aboutHref = "#about" %}
+  {% set contactHref = "contact.html" %}
+  {% set bookHref = "#contact" %}
+  {% set bookClass = "btn ws-btn-primary ml-lg-3 ws-book-btn" %}
+{% else %}
+  {% set logoHref = "/" %}
+  {% set homeHref = "/" %}
+  {% set servicesHref = "/#services" %}
+  {% set processHref = "/#process" %}
+  {% set aboutHref = "/#about" %}
+  {% set contactHref = "contact.html" %}
+  {% set bookHref = "contact.html" %}
+  {% set bookClass = "btn ws-btn-primary ml-lg-3" %}
+{% endif %}
+
+<nav class="navbar navbar-expand-lg navbar-light ws-navbar" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand ws-brand" href="{{ logoHref }}">
+      <img
+        src="assets/images/logo.png"
+        alt="Wusul Logo"
+        class="ws-logo-img"
+      />
+    </a>
+
+    <button
+      class="navbar-toggler border-0"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navMenu"
+      aria-controls="navMenu"
+      aria-expanded="false"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link ws-nav-link{% if isHome %} active{% endif %}" href="{{ homeHref }}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ws-nav-link" href="{{ servicesHref }}">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ws-nav-link" href="{{ processHref }}">Our Process</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ws-nav-link" href="{{ aboutHref }}">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ws-nav-link{% if not isHome %} active{% endif %}" href="{{ contactHref }}">Contact Us</a>
+        </li>
+      </ul>
+      <a href="{{ bookHref }}" class="{{ bookClass }}">Book a Consultation</a>
+    </div>
+  </div>
+</nav>

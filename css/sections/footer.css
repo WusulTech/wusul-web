@@ -111,36 +111,36 @@
 .ws-footer__social-label {
   font-family: var(--ws-font-body);
   font-size: 0.78rem;
-  color: rgba(255, 255, 255, 0.4);
+  font-weight: 500;
+  color: #94a3b8;
 }
 
 .ws-footer__social-icons {
   display: flex;
-  gap: 0.6rem;
+  gap: 0.75rem;
 }
 
-.ws-footer__social-icons a {
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+.ws-footer__social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(148, 163, 184, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255, 255, 255, 0.6);
   transition: var(--ws-ease);
 }
 
-.ws-footer__social-icons a svg {
-  width: 15px;
-  height: 15px;
+.ws-footer__social-link img {
+  width: 20px;
+  height: 20px;
+  display: block;
 }
 
-.ws-footer__social-icons a:hover {
-  background: #0ca7f2;
-  border-color: #0ca7f2;
-  color: #ffffff;
+.ws-footer__social-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(148, 163, 184, 0.35);
   transform: translateY(-2px);
 }
 

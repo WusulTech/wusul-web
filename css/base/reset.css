@@ -18,7 +18,14 @@ body {
   background: var(--ws-bg-page);
   -webkit-font-smoothing: antialiased;
   margin: 0;
-  /* padding-top لأن الـ navbar فيكسد */
   padding-top: 10px;
   overflow-x: hidden;
+}
+
+.ws-hidden-defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
 }

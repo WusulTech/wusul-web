@@ -135,6 +135,31 @@
   color: #0F172A;
 }
 
+.testimonial-avatar--sr {
+  background: linear-gradient(135deg, #8B5CF6, #06B6D4);
+  color: #ffffff;
+}
+
+.testimonial-avatar--ja {
+  background: linear-gradient(135deg, #F59E0B, #EF4444);
+  color: #ffffff;
+}
+
+.testimonial-avatar--lm {
+  background: linear-gradient(135deg, #10B981, #059669);
+  color: #ffffff;
+}
+
+.testimonial-avatar--tp {
+  background: linear-gradient(135deg, #EC4899, #8B5CF6);
+  color: #ffffff;
+}
+
+.testimonial-avatar--na {
+  background: linear-gradient(135deg, #06B6D4, #2563EB);
+  color: #ffffff;
+}
+
 .testimonial-avatar img {
   display: block;
   width: 100%;

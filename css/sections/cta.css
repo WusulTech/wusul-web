@@ -2,16 +2,16 @@
 
 .ws-cta {
   background: var(--ws-bg-page);
-  padding: 4rem 0;
+  padding: clamp(2.5rem, 5vw, 4rem) 0;
 }
 
 .ws-cta__card {
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 450px;
-  padding: 3.5rem;
-  border-radius: var(--ws-radius-cta);
+  min-height: clamp(22rem, 42vw, 28.125rem);
+  padding: clamp(1.75rem, 4vw, 3.5rem);
+  border-radius: clamp(1.25rem, 3vw, var(--ws-radius-cta));
   background: var(--ws-gradient-brand);
   overflow: hidden;
 }
@@ -35,21 +35,22 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  gap: clamp(1.5rem, 4vw, 2.5rem);
   width: 100%;
-  min-height: calc(450px - 7rem);
+  min-height: clamp(16rem, 32vw, 22rem);
 }
 
 .ws-cta__left {
   width: 100%;
-  max-width: 720px;
+  max-width: 45rem;
 }
 
 .ws-cta__title {
-  margin: 0 0 1rem;
+  margin: 0 0 clamp(0.75rem, 2vw, 1rem);
   font-family: var(--ws-font-display);
   font-weight: 700;
-  font-size: clamp(2.2rem, 4vw, 3.5rem);
-  line-height: 1.05;
+  font-size: clamp(1.75rem, 4.5vw, 3.5rem);
+  line-height: 1.08;
   letter-spacing: -0.03em;
   color: var(--ws-cta-title);
 }
@@ -65,8 +66,8 @@
 .ws-cta__desc {
   margin: 0;
   font-family: var(--ws-font-body);
-  font-size: 2rem;
-  line-height: 1.75;
+  font-size: clamp(1rem, 2.2vw, 1.5rem);
+  line-height: 1.6;
   color: rgba(255, 255, 255, 0.92);
 }
 
@@ -76,6 +77,8 @@
 
 .ws-cta__right {
   align-self: flex-end;
+  width: 100%;
+  max-width: 19.9375rem;
   margin-top: auto;
 }
 
@@ -84,8 +87,9 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  width: 319px;
-  height: 48px;
+  width: 100%;
+  max-width: 19.9375rem;
+  height: 3rem;
   padding: 1rem 2rem;
   box-sizing: border-box;
   border: none;
@@ -94,7 +98,7 @@
   box-shadow: 0 18px 40px rgba(17, 66, 192, 0.22);
   font-family: var(--ws-font-display);
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: clamp(0.875rem, 1.8vw, 0.95rem);
   color: #ffffff !important;
   text-decoration: none;
   white-space: nowrap;
@@ -102,8 +106,8 @@
 }
 
 .ws-cta__btn-icon {
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   flex-shrink: 0;
   display: block;
   object-fit: contain;
@@ -116,34 +120,66 @@
   transform: translateY(-2px);
 }
 
-@media (max-width: 767px) {
-  .ws-cta__card {
-    padding: 2rem 1.5rem;
-  }
-
-  .ws-cta__content {
-    min-height: auto;
-    gap: 2rem;
-  }
-
+/* Tablet */
+@media (max-width: 991px) {
   .ws-cta__title-line:first-child {
     white-space: normal;
   }
 
   .ws-cta__pattern {
-    width: 100%;
-    opacity: 0.55;
-    object-position: center;
+    width: 70%;
+    opacity: 0.65;
+  }
+
+  .ws-cta__right {
+    align-self: flex-start;
+    max-width: 100%;
   }
 
   .ws-cta__btn {
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .ws-cta__card {
+    min-height: auto;
+    padding: 1.75rem 1.25rem;
+  }
+
+  .ws-cta__content {
+    min-height: auto;
+    gap: 1.75rem;
+  }
+
+  .ws-cta__pattern {
     width: 100%;
-    max-width: 319px;
+    opacity: 0.5;
+    object-position: center;
+  }
+
+  .ws-cta__title {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+  }
+
+  .ws-cta__desc {
+    font-size: clamp(0.9375rem, 3.8vw, 1.125rem);
+    line-height: 1.65;
+  }
+
+  .ws-cta__right {
+    align-self: stretch;
   }
 }
 
 @media (max-width: 480px) {
   .ws-cta {
-    padding: 3rem 0;
+    padding: 2.5rem 0;
+  }
+
+  .ws-cta__btn {
+    height: 2.75rem;
+    padding: 0.75rem 1.25rem;
   }
 }

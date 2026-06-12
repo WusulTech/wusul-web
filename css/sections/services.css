@@ -4,15 +4,15 @@
   padding: 0.5rem 0;
 }
 .services-section .section-title {
-  font-family: var(--ff-head);
+  font-family: var(--ws-font-display);
   font-size: clamp(1.6rem, 3vw, 2.2rem);
   font-weight: 800;
   text-align: center;
-  color: var(--dark);
-  margin-bottom: 64px;
+  color: var(--ws-text-dark);
+  margin-bottom: clamp(2rem, 6vw, 4rem);
 }
 .services-section .section-title span {
-  color: var(--blue);
+  color: var(--ws-primary);
 }
 .services-section {
   padding: 1rem 0rem;
@@ -434,6 +434,17 @@
 }
 
 /* ─── Responsive ─── */
+@media (max-width: 991px) {
+  .service-item {
+    min-height: min(70vh, 640px);
+    padding: 3rem 0;
+  }
+
+  .service-card {
+    margin: 0 4vw;
+  }
+}
+
 @media (max-width: 768px) {
   .service-item {
     min-height: auto;
@@ -466,7 +477,7 @@
   .mockup-wrap {
     display: none;
   }
-  .services-header h2 {
-    font-size: 28px;
+  .services-header .label {
+    font-size: clamp(1.35rem, 5vw, 1.6rem);
   }
 }

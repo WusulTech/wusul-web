@@ -1,0 +1,85 @@
+{% if isHome %}
+  {% set aboutHref = "#about" %}
+  {% set processHref = "#process" %}
+  {% set logoHref = "#" %}
+{% else %}
+  {% set aboutHref = "/#about" %}
+  {% set processHref = "/#process" %}
+  {% set logoHref = "/" %}
+{% endif %}
+
+<footer class="ws-footer">
+  <div class="container">
+    <div class="ws-footer__top">
+      <div class="ws-footer__brand">
+        <a href="{{ logoHref }}" class="ws-footer__logo">
+          <img src="assets/images/Frame 7.png" alt="Wusul" height="32" />
+        </a>
+        <p class="ws-footer__tagline">
+          Engineering the next generation of digital products through
+          strategic UI/UX and high-performance solutions.
+        </p>
+      </div>
+
+      <div class="ws-footer__col">
+        <h6 class="ws-footer__heading">SERVICES</h6>
+        <ul class="ws-footer__links">
+          <li><a href="#">UI/UX Design</a></li>
+          <li><a href="#">Product Strategy</a></li>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">Digital Redesign</a></li>
+        </ul>
+      </div>
+
+      <div class="ws-footer__col">
+        <h6 class="ws-footer__heading">COMPANY</h6>
+        <ul class="ws-footer__links">
+          <li><a href="{{ aboutHref }}">About Wusul</a></li>
+          <li><a href="{{ processHref }}">Our Process</a></li>
+          <li><a href="#">FAQ's</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="ws-footer__col">
+        <h6 class="ws-footer__heading">Connect</h6>
+        <ul class="ws-footer__links">
+          <li><a href="tel:+972597705019">+972597705019</a></li>
+          <li><a href="mailto:hello@wosool.tech">hello@wosool.tech</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ws-footer__middle">
+      <div class="ws-footer__impact">
+        <p>
+          <span class="ws-footer__impact-label">Design Impact.</span>
+          We don't just create visuals, we build business assets.
+          Every pixel is calculated to drive your brand's growth
+          and maximize your digital ROI.
+        </p>
+      </div>
+
+      <div class="ws-footer__social">
+        <span class="ws-footer__social-label">Connect</span>
+        <div class="ws-footer__social-icons">
+          <a href="https://www.linkedin.com/company/wusul-tech/" class="ws-footer__social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icons/linkedin.svg" alt="" width="20" height="20" />
+          </a>
+          <a href="#" class="ws-footer__social-link" aria-label="X">
+            <img src="assets/icons/x.svg" alt="" width="20" height="20" />
+          </a>
+          <a href="https://www.instagram.com/wusul.tech/" class="ws-footer__social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icons/insta.svg" alt="" width="20" height="20" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ws-footer__divider"></div>
+
+    <div class="ws-footer__bottom">
+      <p>© 2026 Wosool. Crafted with passion for visionaries.</p>
+    </div>
+  </div>
+</footer>

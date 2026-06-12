@@ -30,9 +30,11 @@
   justify-content: center;
   margin: 0 10px;
   height: 48px;
-  width: 300px;
-
+  width: min(100%, 18.75rem);
+  max-width: 18.75rem;
+  box-sizing: border-box;
 }
+
 .ws-btn-outline:hover {
   color: var(--ws-primary) !important;
   transform: translateY(-1px);
